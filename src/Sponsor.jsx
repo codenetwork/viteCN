@@ -15,13 +15,13 @@ function Sponsor()
             </div>
           <h2>Gold Sponsors</h2>
             <div className='sponsor-grid'>
-              <a href="https://technologyonecorp.com/" id="action">
+              <a href="https://www.atlassian.com/" id="action">
                   <img src="/sponsors/atlassian.png" alt="Sign up" className="button-image" />
               </a>
-              <a href="https://technologyonecorp.com/" id="action">
+              <a href="https://www.macquarie.com.au/" id="action">
                   <img src="/sponsors/macquarie.png" alt="Sign up" className="button-image" />
               </a>
-              <a href="https://technologyonecorp.com/" id="action">
+              <a href="https://www.riotinto.com/" id="action">
                   <img src="/sponsors/riotinto.png" alt="Sign up" className="button-image" />
               </a>
           </div>
