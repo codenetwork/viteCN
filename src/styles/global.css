@@ -1,0 +1,94 @@
+#root, html, body, * {
+  font-family: "Montserrat";
+}
+
+#root {
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: minmax(13vh, max-content) 1fr max-content;
+  margin: 0;
+  padding: 0;
+}
+
+.edges {
+  position: relative;
+  animation-name: float-in-left;
+  animation-duration: 2s;
+  animation-timing-function: cubic-bezier(0.5, 1, 0.89, 1);
+  animation-fill-mode: forwards;
+}
+
+.edges > * {
+  animation-name: float-in-left;
+  animation-duration: 2s;
+  animation-timing-function: cubic-bezier(0.5, 1, 0.89, 1);
+  animation-fill-mode: forwards;
+}
+.edges::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  display: block;
+  position: absolute;
+  pointer-events: none;
+  z-index: 4;
+  top: 0;
+  left: 0;
+  animation-name: example;
+  animation-duration: 2s;
+  animation-timing-function: cubic-bezier(0.5, 1, 0.89, 1);
+  animation-fill-mode: forwards;
+  --b: 2px; /* thickness of the border */
+  --c: rgb(1, 214, 9); /* color of the border */
+  --w: 50px; /* width of border */
+  --_g: transparent 90deg, var(--c) 0;
+  --_p: var(--w) var(--w) border-box no-repeat;
+  background: conic-gradient(from 90deg at top var(--b) left var(--b), var(--_g)) 0 0 / var(--_p),
+    conic-gradient(from 180deg at top var(--b) right var(--b), var(--_g)) 100% 0 / var(--_p),
+    conic-gradient(from 0deg at bottom var(--b) left var(--b), var(--_g)) 0 100% / var(--_p),
+    conic-gradient(from -90deg at bottom var(--b) right var(--b), var(--_g)) 100% 100% / var(--_p);
+}
+
+@keyframes example {
+  from {
+    /* padding: 0px;
+    margin: 50px;
+    opacity: -50%; */
+    transform: scaleX(0.95) scaleY(0.9);
+    opacity: -50%;
+  }
+  to {
+    /* padding: 50px;
+    margin: 100px;
+    opacity: 100%; */
+    transform: scaleX(1) scaleY(1);
+    opacity: 100%;
+  }
+}
+
+@keyframes float-in-left {
+  from {
+    transform: translateX(-2%) translateY(-32px);
+    opacity: -50%;
+  } to {
+    transform: translateX(0) translateY(0);
+    opacity: 100%;
+  }
+}
+
+
+p {
+  margin-bottom: 1em;
+  font-size: 1.1rem;
+}
+
+
+header .MuiLink-root {
+  color: white !important;
+  transition: all 0.2s ease-out;
+  &:hover {
+    color: rgb(1, 214, 9) !important;
+    transform: scaleX(1.06) scaleY(1.1);
+  }
+}

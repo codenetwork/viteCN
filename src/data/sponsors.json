@@ -1,0 +1,36 @@
+{
+  "Platinum": [
+    {
+      "name": "Technology One",
+      "level": "Platinum",
+      "image": "/sponsors/technologyone.png",
+      "url": "https://technologyonecorp.com/"
+    }
+  ],
+  "Gold": [
+    {
+      "name": "Tanda",
+      "level": "Gold",
+      "image": "/sponsors/tanda.png",
+      "url": ""
+    },
+    {
+      "name": "Atlassian",
+      "level": "Gold",
+      "image": "/sponsors/atlassian.png",
+      "url": ""
+    },
+    {
+      "name": "Rio Tinto",
+      "level": "Gold",
+      "image": "/sponsors/riotinto.png",
+      "url": ""
+    },
+    {
+      "name": "Deloitte",
+      "level": "Gold",
+      "image": "/sponsors/d.jpg",
+      "url": ""
+    }
+  ]
+}
