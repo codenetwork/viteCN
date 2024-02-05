@@ -7,7 +7,7 @@ import { Menu } from "@mui/icons-material";
 // #TODO Fix flickering of header when scrolling (white flash)
 
 export default function Header() {
-  const base = "top-0 z-20 sticky"
+  const base = "z-20 sticky"
   const top = "bg-[rgba(20,20,20,1)]"
   const floating = "shadow-xl bg-[rgba(12,12,12,0.8)] backdrop-blur-sm"
 

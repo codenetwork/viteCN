@@ -6,7 +6,7 @@
   min-height: 100vh;
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: minmax(13vh, max-content) 1fr max-content;
+  grid-template-rows: max-content 1fr max-content;
   margin: 0;
   padding: 0;
 }
