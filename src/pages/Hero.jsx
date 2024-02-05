@@ -20,7 +20,9 @@ export default function Hero() {
         <div class="flex flex-col gap-12 items-center">
           <img class="max-w-[400px] w-[16vw] mx-auto z-10" src="/logo.png" alt="" />
           <h1 class="text-center text-3xl sm:text-5xl">Join the community</h1>
-          <ButtonBase href="https://qutcode.getqpay.com/" class="bg-gray-100 text-black py-3 sm:py-4 px-8 sm:px-16 text-md sm:text-lg flex gap-4 w-max transition hover:scale-105 hover:shadow-lg hover:shadow-primary">
+          <ButtonBase
+            href="https://qutcode.getqpay.com/"
+            class="bg-gray-100 text-black py-3 sm:py-4 px-8 sm:px-16 text-md sm:text-lg flex gap-4 w-max transition hover:scale-105 hover:shadow-lg hover:shadow-primary">
             Sign Up <OpenInNew sx={{ height: "100%" }} />
           </ButtonBase>
           <div class="flex flex-row flex-wrap gap-x-8 gap-y-4 justify-center">
@@ -40,11 +42,19 @@ export default function Hero() {
       </Page>
       <Page noborder>
         <section class="mb-12">
-          <h2 class="mb-5 text-2xl">Join us for one of our upcoming events!</h2>
-          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 text-black list-none">
+          {/* #TODO: FIX odd alignment when handling a single event */}
+          <h2 class="mb-5 text-2xl text-center">Join us for one of our upcoming events!</h2>
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 text-black list-none ">
             {events.slice(0, 3).map((event, index) => (
               <Event key={index} event={event} />
             ))}
+            {events.length === 0 ? (
+              <>
+                <div class='text-white w-full col-span-3 text-center'><p>Could not find any upcoming events, please check our socials for updates.</p></div>{" "}
+              </>
+            ) : (
+              ""
+            )}
           </div>
         </section>
         <div class="text-center">
