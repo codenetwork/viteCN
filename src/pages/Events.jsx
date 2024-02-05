@@ -8,7 +8,7 @@ import events from "./../data/events.json"
 
 export default function Events() {
   return (
-    <Page>
+    <Page title="Events | Code Network">
       <div class="grid grid-cols-2 gap-24">
         <div>
           <H1>Events</H1>

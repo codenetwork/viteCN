@@ -4,7 +4,7 @@ import { H1 } from "../components/Text";
 
 export default function Rules() {
   return (
-    <Page>
+    <Page title="Rules | Code Network">
       <H1>Code Network Rules and Policies</H1>
       <p>
         Code Network aims to provide a safe, educational and fun environment for all its members.

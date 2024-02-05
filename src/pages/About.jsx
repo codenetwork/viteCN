@@ -7,7 +7,7 @@ import { Link } from "@mui/material";
 
 export default function About() {
   return (
-    <Page>
+    <Page title="About | Code Network">
       <H1>Build anything, as long as it's awesome</H1>
       <p>Code Network is a student-led organisation dedicated to fostering a strong developer community for anyone interested in code.</p>
       <p>
