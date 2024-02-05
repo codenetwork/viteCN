@@ -11,7 +11,7 @@ import { Link } from "@mui/material";
 
 export default function Error404() {
   return (
-    <Page noborder >
+    <Page noborder title="404">
       <div class="flex flex-col items-center gap-7 text-center">
         <H1>Sorry! We can't find the page that you requested!</H1>
         <p>

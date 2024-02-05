@@ -3,7 +3,7 @@ import Page from "../../components/Page";
 import { H1 } from "../../components/Text";
 export default function GeneralRules() {
   return (
-    <Page title="General Rules | Code Network">
+    <Page title="General Rules">
       <H1>General Rules</H1>
       <p>These are general rules that apply everywhere in the Code Network community, including our events, meetups and discussions.</p>
       <div>

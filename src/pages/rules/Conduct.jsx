@@ -3,7 +3,7 @@ import Page from "../../components/Page";
 import { H1 } from "../../components/Text";
 export default function Conduct() {
   return (
-    <Page>
+    <Page title='Code of Conduct'>
       <H1>Code of Conduct</H1>
       <p>
         To help make our community feel safe and welcoming, this code of conduct describes how we expect people to behave and interact with
