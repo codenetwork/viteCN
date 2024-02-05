@@ -18,6 +18,7 @@ import { useContext } from "react";
 import Rules from "./pages/Rules";
 import About from "./pages/About";
 import Hero from "./pages/Hero";
+import Events from "./pages/Events"
 
 // Layouts
 import HeroLayout from "./layouts/HeroLayout";
@@ -57,6 +58,7 @@ function App() {
                 <Route path="/agm" element={<Agm />} />
                 <Route path="/sgm" element={<SGM />} />
                 <Route path="/example" element={<Example />} />
+                <Route path="/events" element={<Events />} />
                 {/* Handle 404 errors */}
                 <Route path="*" element={<Error404 />} />
               </Route>

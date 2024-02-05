@@ -43,6 +43,9 @@ export default function Navbar() {
             </div>
           </div>
         </div>
+        <a class="w-max mx-0 hover:text-primary hover:scale-110 transition" href="/events">
+          Events
+        </a>
         <a class="w-max mx-0 hover:text-primary hover:scale-110 transition" href="/rules">
           Rules
         </a>
