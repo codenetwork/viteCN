@@ -1,36 +1,30 @@
 {
   "Platinum": [
-    {
-      "name": "Technology One",
-      "level": "Platinum",
-      "image": "/sponsors/technologyone.png",
-      "url": "https://technologyonecorp.com/"
-    }
+    
   ],
   "Gold": [
     {
       "name": "Tanda",
       "level": "Gold",
       "image": "/sponsors/tanda.png",
-      "url": ""
-    },
+      "url": "https://www.tanda.co/"
+    }
+  ],
+  "Silver": [
     {
       "name": "Atlassian",
-      "level": "Gold",
+      "level": "Silver",
       "image": "/sponsors/atlassian.png",
-      "url": ""
+      "url": "https://www.atlassian.com/"
     },
     {
-      "name": "Rio Tinto",
-      "level": "Gold",
-      "image": "/sponsors/riotinto.png",
-      "url": ""
-    },
-    {
-      "name": "Deloitte",
-      "level": "Gold",
-      "image": "/sponsors/d.jpg",
-      "url": ""
+      "name": "Macquarie Group",
+      "level": "Silver",
+      "image": "/sponsors/macquarie.png",
+      "url": "https://www.macquarie.com.au/"
     }
+  ],
+  "Bronze": [
+
   ]
 }
