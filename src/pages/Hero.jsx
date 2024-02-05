@@ -10,6 +10,9 @@ import bgImage from "./../assets/bg.png";
 import Sponsors from "../components/Sponsors";
 import Spinner from "../components/Spinner";
 
+import events from "./../data/events.json";
+import Event from "../components/Event";
+
 export default function Hero() {
   return (
     <>
@@ -36,6 +39,14 @@ export default function Hero() {
         </span>
       </Page>
       <Page noborder>
+        <section class="mb-12">
+          <h2 class="mb-5 text-2xl">Join us for one of our upcoming events!</h2>
+          <div class="grid grid-cols-3 gap-4 text-black list-none">
+            {events.slice(0, 3).map((event, index) => (
+              <Event key={index} event={event} />
+            ))}
+          </div>
+        </section>
         <div class="text-center">
           <h2 class="text-3xl md:text-5xl mb-8">Would you like to support us in 2024?</h2>
           <p>We are proud to be sponsored by some amazing companies!</p>
@@ -50,7 +61,7 @@ export default function Hero() {
           </ButtonBase>
         </div>
         <div className="text-center mt-16">
-        <h2 class="text-3xl md:text-4xl mb-8">Thank you to our 2023 Sponsors!</h2>
+          <h2 class="text-3xl md:text-4xl mb-8">Thank you to our 2023 Sponsors!</h2>
           <Sponsors />
         </div>
       </Page>
