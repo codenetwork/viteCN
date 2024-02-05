@@ -9,7 +9,7 @@ import events from "./../data/events.json"
 export default function Events() {
   return (
     <Page title="Events">
-      <div class="grid grid-cols-2 gap-24">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-24">
         <div>
           <H1>Events</H1>
           <img class="px-12 max-h-[60vh] mx-auto" src={Graphic} alt="" />
