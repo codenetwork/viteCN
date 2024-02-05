@@ -23,6 +23,8 @@ import Hero from "./pages/Hero";
 import Events from "./pages/Events"
 import GeneralRules from "./pages/rules/General";
 import AGM from "./pages/Agm";
+import Conduct from "./pages/rules/Conduct"
+import SafeSpace from "./pages/rules/SafeSpace";
 
 // Layouts
 import HeroLayout from "./layouts/HeroLayout";
@@ -37,6 +39,7 @@ import Error404 from "./pages/errors/404";
 import { ThemeProvider } from "@mui/material/styles";
 import theme from "./styles/theme";
 import Spinner from "./components/Spinner";
+import Constitution from "./pages/Constitution";
 
 function App() {
   return (
@@ -55,8 +58,12 @@ function App() {
                 <Route path="/about" element={<About />} />
                  <Route path="/rules" element={<Rules />} />
                 <Route path="/rules/general" element={<GeneralRules />} />
+                <Route path="/rules/conduct" element={<Conduct />} /> 
+                <Route path="/rules/safespace" element={<SafeSpace />} /> 
                 <Route path="/agm" element={<AGM />} />
                 <Route path="/events" element={<Events />} />
+                <Route path="/constitution" element={<Constitution />} />
+               
                 {/*
                 <Route path="/rules/ssp" element={<Ssp />} />
                 <Route path="/rules/coc" element={<Coc />} />
