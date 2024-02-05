@@ -41,7 +41,7 @@ export default function Hero() {
       <Page noborder>
         <section class="mb-12">
           <h2 class="mb-5 text-2xl">Join us for one of our upcoming events!</h2>
-          <div class="grid grid-cols-3 gap-4 text-black list-none">
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 text-black list-none">
             {events.slice(0, 3).map((event, index) => (
               <Event key={index} event={event} />
             ))}
