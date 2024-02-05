@@ -17,7 +17,7 @@ export default function Events() {
         </div>
         <ul class="flex flex-col gap-4">
           <h2>Upcoming Events</h2>
-          {events.map((event, index) => (
+          {events.slice(0, 5).map((event, index) => (
             <Event key={index} event={event} />
           ))}
         </ul>
