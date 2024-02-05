@@ -3,7 +3,7 @@ import App from "./App";
 import { BrowserRouter } from "react-router-dom";
 
 // STYLING
-import "./tailwind.css";
+import "./styles/tailwind.css";
 import "./styles/global.css";
 
 // Updated to React 18 compliant root render format 
