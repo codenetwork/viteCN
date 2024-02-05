@@ -24,6 +24,25 @@ npm run dev
 yarn install
 yarn run dev
 ```
+## Changes to Events, CN Team and Sponsors
+The key data and information for these pages is easily changed by accessing the `src/data/` directory and selecting the relevant JSON file and making the changes directly to that file, this information will then be read by the respective pages where necessary.
+
+## Creating a new Page
+The process for creating a new page has been simplified and an attempt to reduce boilerplate code has been made, further changes and improvements to this process may occur over time with feedback!
+
+Create a new page in `src/pages/` with the `<Name>.jsx` format, include the following essentials and then you can add any further content.
+```jsx
+import Page from "../components/Page";
+export default function PAGE_NAME_HERE() {
+  return (
+    <Page>
+    {/* ALL YOUR PAGE CONTENT HERE */}
+    </Page>
+  )
+}
+```
+### No border page
+To remove the default Code Network green border add the `noborder` attribute to the `<Page>` element like this `<Page noborder>`
 
 ## Contribution Guidelines
 In an attempt to develop some structure to the development lifecycle for this website, we ask the following when you contribute to this site. If you know a better way to structure the contributions for this site please reach out to us.
