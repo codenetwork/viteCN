@@ -61,7 +61,7 @@ export default function Hero() {
           </ButtonBase>
         </div>
         <div className="text-center mt-16">
-          <h2 class="text-3xl md:text-4xl mb-8">Thank you to our 2023 Sponsors!</h2>
+          <h2 class="text-3xl md:text-4xl mb-8">Thank you to our 2024 Sponsors!</h2>
           <Sponsors />
         </div>
       </Page>
