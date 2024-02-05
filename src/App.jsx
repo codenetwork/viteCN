@@ -22,6 +22,7 @@ import About from "./pages/About";
 import Hero from "./pages/Hero";
 import Events from "./pages/Events"
 import GeneralRules from "./pages/rules/General";
+import AGM from "./pages/Agm";
 
 // Layouts
 import HeroLayout from "./layouts/HeroLayout";
@@ -53,14 +54,17 @@ function App() {
               <Route element={<DefaultLayout />}>
                 <Route path="/about" element={<About />} />
                  <Route path="/rules" element={<Rules />} />
-                <Route path="/rules/general" element={<GeneralRules />} />{/*
+                <Route path="/rules/general" element={<GeneralRules />} />
+                <Route path="/agm" element={<AGM />} />
+                <Route path="/events" element={<Events />} />
+                {/*
                 <Route path="/rules/ssp" element={<Ssp />} />
                 <Route path="/rules/coc" element={<Coc />} />
                 <Route path="/rules/constitution" element={<Constitution />} /> */}
                 {/* <Route path="/agm" element={<Agm />} />
                 <Route path="/sgm" element={<SGM />} />
                 <Route path="/example" element={<Example />} /> */}
-                <Route path="/events" element={<Events />} />
+                
                 {/* Handle 404 errors */}
                 <Route path="*" element={<Error404 />} />
               </Route>
