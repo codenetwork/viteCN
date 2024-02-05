@@ -4,7 +4,7 @@ import Event from "./../components/Event";
 
 import Graphic from "./../assets/images/Events-bro.png";
 
-import events from "./../data/events.json"
+import events from "./../data/events.json";
 
 export default function Events() {
   return (
