@@ -7,7 +7,7 @@ import { Menu } from "@mui/icons-material";
 // #TODO Fix flickering of header when scrolling (white flash)
 
 export default function Header() {
-  const base = "z-20 sticky"
+  const base = "z-20 sticky top-0"
   const top = "bg-[rgba(20,20,20,1)]"
   const floating = "shadow-xl bg-[rgba(12,12,12,0.8)] backdrop-blur-sm"
 
@@ -17,7 +17,7 @@ export default function Header() {
   useEffect(() => {
     const handleScroll = () => {
       const scrollPosition = window.scrollY;
-      if (scrollPosition > 180) {
+      if (scrollPosition > 100) {
         setScroll(true);
       } else {
         setScroll(false);
