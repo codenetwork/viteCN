@@ -63,7 +63,7 @@ export default function Hero() {
               industry@codenetwork.co
             </Link>
           </p>
-          <ButtonBase class="bg-gray-100 text-black mx-auto py-3 sm:py-4 px-8 sm:px-16 text-md sm:text-lg flex gap-4 w-max transition hover:scale-105 hover:shadow-lg hover:shadow-primary">
+          <ButtonBase href="https://www.codenetwork.co/code_network_2024_prospectus.pdf" class="bg-gray-100 text-black mx-auto py-3 sm:py-4 px-8 sm:px-16 text-md sm:text-lg flex gap-4 w-max transition hover:scale-105 hover:shadow-lg hover:shadow-primary">
             Read our Prospectus
           </ButtonBase>
         </div>
