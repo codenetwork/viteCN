@@ -39,7 +39,7 @@ import Error404 from "./pages/errors/404";
 import { ThemeProvider } from "@mui/material/styles";
 import theme from "./styles/theme";
 import Spinner from "./components/Spinner";
-import Constitution from "./pages/Constitution";
+import Constitution from "./pages/rules/Constitution";
 
 function App() {
   return (

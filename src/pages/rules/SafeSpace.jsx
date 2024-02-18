@@ -3,7 +3,7 @@ import Page from "../../components/Page";
 import { H1 } from "../../components/Text";
 export default function SafeSpace() {
   return (
-    <Page title="Safe Space Policy">
+      <>
       <H1>Safe Space Policy</H1>
       <p>
         Code Network is and always will be a safe and inclusive space for everyone. We believe that in the absence of true equality in our
@@ -89,6 +89,6 @@ export default function SafeSpace() {
           <p>Oppression of a group of people based on their sexual orientation or preferences.</p>
         </div>
       </div>
-    </Page>
+      </>
   );
 }
