@@ -9,7 +9,6 @@ export default function Footer() {
           <span class='text-gray-400 my-1'>&copy; {new Date().getFullYear().toString()} Code Network</span>
         </div>
         <div class="flex flex-col md:flex-row justify-end md:col-span-2">
-          <Link underline="hover" color="secondary" href="/helloworld">Developers</Link>
         </div>
       </div>
     </footer>
