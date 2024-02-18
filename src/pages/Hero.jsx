@@ -41,9 +41,9 @@ export default function Hero() {
         </span>
       </Page>
       <Page noborder>
-        <section class="mb-12">
+        {/* <section class="mb-12"> */}
           {/* #TODO: FIX odd alignment when handling a single event */}
-          <h2 class="mb-5 text-2xl text-center">Join us for one of our upcoming events!</h2>
+          {/* <h2 class="mb-5 text-2xl text-center">Join us for one of our upcoming events!</h2>
           <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 text-black list-none ">
             {events.slice(0, 3).map((event, index) => (
               <Event key={index} event={event} />
@@ -56,7 +56,7 @@ export default function Hero() {
               ""
             )}
           </div>
-        </section>
+        </section> */}
         <div class="text-center">
           <h2 class="text-3xl md:text-5xl mb-8">Would you like to support us in 2024?</h2>
           <p>We are proud to be sponsored by some amazing companies!</p>
