@@ -75,9 +75,6 @@ export default function Navbar() {
               </div>
             </div>
           </div>
-          <a class="self-center hover:text-primary hover:scale-110 transition" href="/events">
-            Events
-          </a>
           <a class="self-center hover:text-primary hover:scale-110 transition" href="/rules">
             Rules
           </a>

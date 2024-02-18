@@ -10,9 +10,6 @@ import bgImage from "./../assets/bg.png";
 import Sponsors from "../components/Sponsors";
 import Spinner from "../components/Spinner";
 
-import events from "./../data/events.json";
-import Event from "../components/Event";
-
 export default function Hero() {
   return (
     <>

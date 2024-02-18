@@ -20,7 +20,6 @@ import AnimatedCursor from "./component/cursor";
 import Rules from "./pages/Rules";
 import About from "./pages/About";
 import Hero from "./pages/Hero";
-import Events from "./pages/Events"
 import GeneralRules from "./pages/rules/General";
 import AGM from "./pages/Agm";
 import Conduct from "./pages/rules/Conduct"
@@ -61,18 +60,7 @@ function App() {
                 <Route path="/rules/conduct" element={<Conduct />} /> 
                 <Route path="/rules/safespace" element={<SafeSpace />} /> 
                 <Route path="/agm" element={<AGM />} />
-                <Route path="/events" element={<Events />} />
                 <Route path="/constitution" element={<Constitution />} />
-               
-                {/*
-                <Route path="/rules/ssp" element={<Ssp />} />
-                <Route path="/rules/coc" element={<Coc />} />
-                <Route path="/rules/constitution" element={<Constitution />} /> */}
-                {/* <Route path="/agm" element={<Agm />} />
-                <Route path="/sgm" element={<SGM />} />
-                <Route path="/example" element={<Example />} /> */}
-                
-                {/* Handle 404 errors */}
                 <Route path="*" element={<Error404 />} />
               </Route>
             </Routes>
