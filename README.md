@@ -51,7 +51,7 @@ In an attempt to develop some structure to the development lifecycle for this we
 We use a `master` < `dev` < `[feature]` branch structure, to implement a new feature please fork a branch from dev and then merge back into dev.
 
 ### Conventional Commits
-For commits to the source code for this repository please try to use [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/) to enforce better commit messages.
+For commits to the source code for this repository please try to use informative or helpful commit messages, even consider using [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/) to enforce better commit messages.
 
 ## History
 
