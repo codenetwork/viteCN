@@ -31,13 +31,22 @@ export default function Navbar() {
 
   return (
     <>
+    {/* I've attempted to reimplement the navbar below to get around the weird issues with the image in the navbar. */}
+      <nav className="flex flex-row max-w-screen-lg mx-auto items-center justify-center gap-3 text-white py-6">
+        <a href="/" className="">
+          <img src="/logo.png" alt="Code Network Logo" class="max-h-12 mx-3" />
+        </a>
+        <a href="/">About Us</a>
+        <a href="/">Socials</a>
+        <a href="/">Rules</a>
+      </nav>
       <nav
         class={
           "md:max-h-[13vh] md:static grid grid-cols-1 grid-rows-1 max-w-screen-xl mx-auto" + " " + (navOpen ? "absolute h-screen" : "")
         }>
         <div class={"w-full h-fit text-white p-6 px-16 text-right flex flex-row" + " " + (navOpen ? "hidden" : "md:hidden")}>
-          <a class="grid grid-cols-1 grid-rows-1  w-fit hover:scale-105 transition" href="/">
-            <img class="mx-auto max-w-[50%] " src="/logo.png" alt="" />
+          <a class="grid grid-cols-1 grid-rows-1 hover:scale-105 transition" href="/">
+            <img class="mx-auto max-w-[50%] max-h-12 " src="/logo.png" alt="" />
           </a>
           <ButtonBase onClick={handleClick}><Menu sx={{placeSelf:'center'}}/></ButtonBase>
         </div>  
