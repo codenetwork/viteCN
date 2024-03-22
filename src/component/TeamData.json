@@ -39,7 +39,7 @@
     "role": "Socials Officer"
   },
   {
-    "name": "Christopher Borzi",
+    "name": "Christofer Borzi",
     "photo": "/execs/chris.jpg",
     "role": "Versatile Executive"
   },
@@ -56,6 +56,11 @@
     "name": "Wenze Wang",
     "photo": "/execs/wenze.jpg",
     "role": "Versatile Executive"
+  }, 
+  {
+    "name": "Gideon Caturla",
+    "photo": "/execs/gideon.jfif",
+    "role": "Versatile Executive (Returning)"
   },
   {
     "name": "Patrick Richardson",

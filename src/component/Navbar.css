@@ -43,7 +43,10 @@ nav a:hover {
 	transform: scale(1.1);
 	color: var(--secondaryColor);
 }
+a:hover {
+	color: var(--secondaryColor);
 
+}
 header .nav-btn {
 	padding: 5px;
 	cursor: pointer;
