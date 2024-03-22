@@ -45,7 +45,7 @@ function App() {
     <>
       <Suspense fallback={<Spinner/>}>
         <ThemeProvider theme={theme}>
-          <Header />
+          
           <div>
             <AnimatedCursor />
             <Routes>
