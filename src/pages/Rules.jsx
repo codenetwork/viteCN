@@ -1,10 +1,10 @@
 import Page from "../components/Page";
 import { useState } from "react";
 
-import GeneralRules from "./rules/General";
-import Conduct from "./rules/Conduct";
-import SafeSpace from "./rules/SafeSpace";
-import Constitution from "./rules/Constitution";
+import GeneralRules from "../components/rules/General";
+import Conduct from "../components/rules/Conduct";
+import SafeSpace from "../components/rules/SafeSpace";
+import Constitution from "../components/rules/Constitution";
 
 export function Tab(props) {
   return (

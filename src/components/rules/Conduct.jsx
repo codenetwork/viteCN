@@ -1,6 +1,6 @@
-import Link from "../../components/Link";
-import Page from "../../components/Page";
-import { H1 } from "../../components/Text";
+import Link from "../Link";
+import Page from "../Page";
+import { H1 } from "../Text";
 export default function Conduct() {
   return (
     // <Page title='Code of Conduct'>
