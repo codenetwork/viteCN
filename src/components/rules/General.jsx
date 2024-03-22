@@ -47,7 +47,7 @@ export default function GeneralRules() {
           <i>*specific discord channels may allow self promotion, links etc. It must explicitly say this in the channel description.</i>
         </p>
         <h2 class="text-xl mb-2 font-bold">Follow our expectations</h2>
-        <p>Be kind and always follow this document, the <Link class="text-primary" href='/rules/conduct'>Code of Conduct</Link> and <Link class="text-primary" href='/rules/safespace'>Safe Space Policy</Link></p>
+        <p>Be kind and always follow this document, the Code of Conduct and Safe Space Policy</p>
       </div>
     </>
   );
