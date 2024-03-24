@@ -1,37 +1,55 @@
-import { useState } from 'react'
-import './App.css'
-import GeneralRules from './general_rules'
-import { Routes, Route } from "react-router-dom"
-import AnimatedCursor from "./component/cursor"
-import Header from './Header'
-import Ssp from './ssp'
-import Coc from './coc'
-import About from './About'
-import Agm from './Agm'
-import Rules from './Rules'
-import Constitution from './constitution'
-import SGM from './Sgm'
+// React
+import { Suspense } from "react";
+import { Routes, Route } from "react-router-dom";
 
-function App()
-{
+// Libraries
+import AnimatedCursor from "./component/cursor";
+
+// Pages
+import Rules from "./pages/Rules";
+import About from "./pages/About";
+import Hero from "./pages/Hero";
+import AGM from "./pages/Agm";
+
+// Layouts
+import HeroLayout from "./layouts/HeroLayout";
+import DefaultLayout from "./layouts/DefaultLayout";
+
+// Components
+import Footer from "./components/Footer";
+import Error404 from "./pages/errors/404";
+import Spinner from "./components/Spinner";
+
+// Styles
+import { ThemeProvider } from "@mui/material/styles";
+import theme from "./styles/theme";
+
+
+function App() {
   return (
-    <div>
-      <section className="auto-margin App">
-        <AnimatedCursor />
-        <Routes>
-          <Route path="/" element={<Header />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/rules" element={<Rules />} />
-          <Route path="/rules/general" element={<GeneralRules />} />
-          <Route path="/rules/ssp" element={<Ssp />} />
-          <Route path="/rules/coc" element={<Coc />} />
-          <Route path="/rules/constitution" element={<Constitution />} />
-          <Route path="/agm" element={<Agm />} />
-          <Route path="/sgm" element={<SGM />} />
-        </Routes>
-      </section>
-    </div>
-  )
+    <>
+      <Suspense fallback={<Spinner />}>
+        <ThemeProvider theme={theme}>
+          <div>
+            <AnimatedCursor />
+            <Routes>
+              <Route element={<HeroLayout />}>
+                {/* Dark theme background */}
+                <Route index path="/" element={<Hero />} />
+              </Route>
+              <Route element={<DefaultLayout />}>
+                <Route path="/about" element={<About />} />
+                <Route path="/rules" element={<Rules />} />
+                <Route path="/agm" element={<AGM />} />
+                <Route path="*" element={<Error404 />} />
+              </Route>
+            </Routes>
+          </div>
+          <Footer />
+        </ThemeProvider>
+      </Suspense>
+    </>
+  );
 }
 
 export default App;

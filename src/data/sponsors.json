@@ -1,0 +1,30 @@
+{
+  "Platinum": [
+    
+  ],
+  "Gold": [
+    {
+      "name": "Tanda",
+      "level": "Gold",
+      "image": "/sponsors/tanda.png",
+      "url": "https://www.tanda.co/"
+    }
+  ],
+  "Silver": [
+    {
+      "name": "Atlassian",
+      "level": "Silver",
+      "image": "/sponsors/atlassian.png",
+      "url": "https://www.atlassian.com/"
+    },
+    {
+      "name": "Macquarie Group",
+      "level": "Silver",
+      "image": "/sponsors/macquarie.png",
+      "url": "https://www.macquarie.com.au/"
+    }
+  ],
+  "Bronze": [
+
+  ]
+}
