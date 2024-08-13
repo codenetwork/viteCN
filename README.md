@@ -15,7 +15,7 @@ yarn install
 yarn run dev
 ````
 
-# Design Biref
+# Design Brief
 
 Developed by Jim Chi & Nathan Wang.
 
