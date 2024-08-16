@@ -20,7 +20,7 @@ function Ssp()
                     discussions and online communications. Any other behavior which would
                     reasonably make a person feel trivialised or otherwise discriminated
                     against is also prohibited. If you violate this policy you could be
-                    asked to leave our community either temporarily or permanently.s
+                    asked to leave our community either temporarily or permanently.
                 </p>
             </div>
             <p>
@@ -35,7 +35,7 @@ function Ssp()
                 Alcohol and other drugs are not an excuse for bad behaviour. We
                 recognise the difficulties imposed by mental health and/or other
                 disabilities, but these issues are not an excuse for poor behaviour
-                either. Everyone can expect to be held accountable of their behaviour
+                either. Everyone can expect to be held accountable for their behaviour
                 equally. We ask that you be aware of your capacity to remain in control
                 of your emotions, actions and reactions when these things come into
                 play.
