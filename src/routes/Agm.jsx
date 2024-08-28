@@ -8,7 +8,7 @@ function Agm() {
   return (
     <div className="content-wrapper">
       <div className="edges" style={{ color: "#111", fontFamily: "Montserrat" }}>
-        <div className="global-padding">
+        <div>
           <h1>January 2024 Annual General Meeting</h1>
           <p>
             The 2024 Annual General Meeting will be held on <strong>Monday, September 9th at 5pm</strong> in <strong>GP D-108</strong>.
