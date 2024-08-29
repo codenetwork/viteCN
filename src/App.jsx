@@ -7,12 +7,13 @@ import Header from "./Header";
 import Ssp from "./ssp";
 import Coc from "./coc";
 import About from "./About";
-import Agm from "./Agm";
+import Agm from "./routes/Agm";
 import Rules from "./Rules";
 import Constitution from "./constitution";
 import SGM from "./Sgm";
 
 import HackathonPage from "@/routes/Hackathon";
+import Showcase from "@/routes/Showcase";
 
 function App() {
   return (
@@ -29,7 +30,7 @@ function App() {
           <Route path="/rules/constitution" element={<Constitution />} />
           <Route path="/agm" element={<Agm />} />
           <Route path="/sgm" element={<SGM />} />
-          <Route path="/hackathon" element={<HackathonPage />} />
+          <Route path="/hackathon" element={<Showcase />} />
         </Routes>
       </section>
     </div>

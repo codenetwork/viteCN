@@ -44,6 +44,7 @@ function Navbar() {
           </div>
           <a href="/rules">Rules</a>
           <a href="/hackathon">Hackathon</a>
+          <a href="/agm">AGM</a>
 
           <button className="nav-btn nav-close-btn" onClick={showNavbar}>
             <FaTimes />
