@@ -31,6 +31,7 @@ function About() {
           </p>
           <div className='padding'></div>
           <h2 style={{marginBottom: 0}}>Our Team</h2>
+          <div style={{fontSize: "1.2rem"}}>Full team details coming soon!</div>
           <div className="team-section">
             {teamData.map((member, index) => (
               <div className="team-member" key={index}>
