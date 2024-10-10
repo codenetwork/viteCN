@@ -6,7 +6,7 @@ function Agm() {
     <div className="content-wrapper">
       <div className="edges" style={{ color: "#111", fontFamily: 'Montserrat' }}>
         <div className="global-padding">
-          <h1>The 2023 Code Network AGM has now passed. Details about the 2024 AGM will be announced in September 2024.</h1>
+          <h1>The 2024 Code Network AGM has now passed. Details about the 2025 AGM will be announced in September 2025.</h1>
         </div>
       </div >
     </div>
