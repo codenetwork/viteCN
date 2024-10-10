@@ -1,99 +1,29 @@
 [
   {
+    "name": "Subiksha Thiya",
+    "photo": "/execs/subiksha.jpg",
+    "role": "President",
+    "link": {
+      "email": "president@codenetwork.co"
+    }
+  },
+  {
     "name": "Corey McCormick",
     "photo": "/execs/corey.jfif",
-    "role": "President",
+    "role": "Projects Coordinator",
     "description": "",
     "link": {
-      "email": "president@codenetwork.co",
       "github": "https://github.com/McCorsa/",
       "linkedin": "https://www.linkedin.com/in/corey-mccormick/"
     }
   },
   {
-    "name": "Steve Hun",
-    "photo": "/execs/steve2.jpg",
-    "role": "Vice President",
-    "description": "",
-    "link": {
-      "email": "vicepresident@codenetwork.co"
-    }
-  },
-  {
-    "name": "Jovan Felix Fersando",
-    "photo": "/execs/jovan.jpg",
-    "role": "Treasurer",
-    "link": {
-      "email": "treasurer@codenetwork.co",
-      "linkedin": "https://www.linkedin.com/in/jovan-felix-fersando-79777722a/"
-    }
-  },
-  {
-    "name": "Brandon Gan",
-    "photo": "/execs/brandon.jpg",
-    "role": "Events Officer"
-  },
-  {
-    "name": "Zoe Wright",
-    "photo": "/execs/zoe.jpg",
-    "role": "Socials Officer"
-  },
-  {
-    "name": "Christofer Borzi",
-    "photo": "/execs/chris.jpg",
-    "role": "Versatile Executive"
-  },
-  {
     "name": "Liam D'Souza",
     "photo": "/execs/liam.jpeg",
-    "role": "Versatile Executive",
+    "role": "General Executive",
     "link": {
       "github": "https://github.com/liiam-dsouza",
       "linkedin": "https://www.linkedin.com/in/liam-d%E2%80%99souza-559a3a235/"
     }
-  },
-  {
-    "name": "Wenze Wang",
-    "photo": "/execs/wenze.jpg",
-    "role": "Versatile Executive"
-  }, 
-  {
-    "name": "Gideon Caturla",
-    "photo": "/execs/gideon.jfif",
-    "role": "Versatile Executive (Returning)"
-  },
-  {
-    "name": "Patrick Richardson",
-    "photo": "/execs/patrick.jpg",
-    "role": "Developer"
-  },
-  {
-    "name": "Jesse O'Sullivan",
-    "photo": "/execs/jesse.jpg",
-    "role": "Developer"
-  },
-  {
-    "name": "Subiksha Thiya",
-    "photo": "/execs/subiksha.jpg",
-    "role": "Developer"
-  },
-  {
-    "name": "Ryan Melone",
-    "photo": "/execs/ryan.jpg",
-    "role": "Developer (Returning)",
-    "link": {
-      "linkedin": "https://www.linkedin.com/in/ryan-malone-077a5a20b/",
-      "github": "https://github.com/bb3b191"
-    }
-  },
-  {
-    "name": "Drayko Medlyn",
-    "photo": "/execs/drayko.png",
-    "role": "Developer (Returning)"
-  },
-  {
-    "name": "Dakota Walton",
-    "photo": "/execs/dakota.jfif",
-    "role": "Developer (Returning)"
   }
 ]
