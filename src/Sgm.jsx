@@ -11,7 +11,7 @@ export default function SGM() {
   return (
     <div class="edges" style={{ display: "grid" }}>
       <div style={{ maxWidth: "90ch", placeSelf: "center" }}>
-        <p>There are no General Meetings currently scheduled at this time.</p>
+        <p>There are no Special General Meetings currently scheduled at this time.</p>
         {/* <h1>January 2024 Special General Meeting</h1>
         <p>Dear Code Network members,</p>
         <p>
