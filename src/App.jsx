@@ -13,6 +13,7 @@ import Constitution from "./constitution";
 import SGM from "./Sgm";
 
 import HackathonPage from "@/routes/Hackathon";
+import DesignCompetitionPage from "./routes/DesignCompetition";
 
 function App() {
   return (
@@ -30,6 +31,7 @@ function App() {
           <Route path="/agm" element={<Agm />} />
           <Route path="/sgm" element={<SGM />} />
           <Route path="/hackathon" element={<HackathonPage />} />
+          <Route path="/competition" element={<DesignCompetitionPage />} />
         </Routes>
       </section>
     </div>
