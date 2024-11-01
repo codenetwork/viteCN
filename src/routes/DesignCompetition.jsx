@@ -79,6 +79,7 @@ export default function DesignCompetitionPage() {
           <Tab label="Judging Criteria" />
           <Tab label="Prizes" />
           <Tab label="Who to Contact" />
+          <Tab label="Design Resources" />
         </Tabs>
 
         <CompetitionTab index={0} currentIndex={value}>
@@ -275,6 +276,15 @@ export default function DesignCompetitionPage() {
         <CompetitionTab index={4} currentIndex={value}>
           <p>Please direct any questions to <a href="mailto:hello@codenetwork.co">hello@codenetwork.co</a>.</p>
           <p>We would be happy to answer any questions relating to the competition or about what we would like to see from the website.</p>
+        </CompetitionTab>
+        <CompetitionTab index={5} currentIndex={value}>
+          <h3>Logo</h3>
+          <p>Logo resources to go here</p>
+          <h3>Colour Scheme</h3>
+          <div style={{display: "flex", flexDirection: "row"}}>
+            <div style={{width: "36px", height: "36px", backgroundColor: "green"}}></div>
+            <span>Green</span>
+          </div>
         </CompetitionTab>
       </div>
 
