@@ -281,9 +281,9 @@ export default function DesignCompetitionPage() {
           <h3>Logo</h3>
           <p>Logo resources to go here</p>
           <h3>Colour Scheme</h3>
-          <div style={{display: "flex", flexDirection: "row"}}>
-            <div style={{width: "36px", height: "36px", backgroundColor: "green"}}></div>
-            <span>Green</span>
+          <div style={{display: "flex", flexDirection: "row", alignItems: "center", gap: "0.5em"}}>
+            <div style={{width: "36px", height: "36px", backgroundColor: "#31cd3e"}}></div>
+            <span>Code Network Green</span>
           </div>
         </CompetitionTab>
       </div>
