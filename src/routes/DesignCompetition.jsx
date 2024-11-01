@@ -1,10 +1,11 @@
+import CountdownSection from "@/components/CountdownSection";
 import "@/styles/design-comp.css"
 import { Alert, Button, Tab, Table, TableBody, TableCell, TableContainer, TableHead, TableRow, Tabs } from "@mui/material"
-import { useState } from "react"
+import { useState, useEffect } from "react"
 
 function CompetitionTab({ children, index, currentIndex }) {
   return (
-    <div style={{ display: index === currentIndex ? "block" : "none", border: "1px solid lightgray", padding: "0.5em" }}>
+    <div style={{ display: index === currentIndex ? "block" : "none", border: "1px solid lightgray", padding: "1em" }}>
       {children}
     </div>
   )
@@ -12,26 +13,48 @@ function CompetitionTab({ children, index, currentIndex }) {
 
 export default function DesignCompetitionPage() {
   const [value, setValue] = useState(0);
+  const [showEnterButton, setShowEnterButton] = useState(true);
+
+  const dueDateStr = '2025-02-10T00:00:00+10:00';
+  const dueDate = new Date(dueDateStr)
+
+  useEffect(() => {
+    document.title = "Website Redesign Competition | Code Network";
+
+    const checkTime = () => {
+      const now = new Date();
+
+      if (now >= dueDate) {
+        setShowEnterButton(false);
+      }
+    };
+
+    checkTime();
+    const timer = setInterval(checkTime, 1000 * 60); // Check every minute
+
+    return () => clearInterval(timer);
+  }, [dueDate]);
 
   return (
     <main className="container">
       <div className="header" style={{ borderRadius: '0px', color: 'white', fontSize: '2rem', padding: "1em", textAlign: 'center', fontWeight: 'bold' }}>
         <h1 style={{ marginTop: "12px", marginBottom: "12px" }}>Code Network Website Re-Design Competition</h1>
         <Alert severity="info" sx={{ maxWidth: "36em", marginX: "auto" }} action={
-          <Button href="https://docs.google.com/forms/d/e/1FAIpQLSeAQvYnytsWbxXIYVEA2YbxLoVAav-B6WQtMelCjCHkv-iLdw/viewform?usp=sf_link" target="_blank" color="inherit" size="small" sx={{ ":hover": { color: "inherit" } }}>Express your interest</Button>
-        }>Expressions of interest now open!</Alert>
+          <Button href="https://codenetwork.notion.site/1311e884ce0d80eda987f9d6ddb9a06d?pvs=105" target="_blank" color="inherit" size="small" sx={{ ":hover": { color: "inherit" } }}>Enter your design here</Button>
+        }>Competition entries now open!</Alert>
+        <CountdownSection initialDate={dueDateStr} />
       </div>
       <div className="edges">
         <h1>What's this all about?</h1>
         <p>
           Code Network's website is where we showcase who our club is, why we exist, and what we do. We need to communicate this information to:
-          <ul>
-            <li>Students - who want to know why they should join our community and how they can get involved</li>
-            <li>Members - who want to see what our upcoming events are</li>
-            <li>Academics at QUT - who want to share our club with their students</li>
-            <li>People in the industry - who want to know why they should support our club</li>
-          </ul>
         </p>
+        <ul>
+          <li>Students - who want to know why they should join our community and how they can get involved</li>
+          <li>Members - who want to see what our upcoming events are</li>
+          <li>Academics at QUT - who want to share our club with their students</li>
+          <li>People in the industry - who want to know why they should support our club</li>
+        </ul>
         <p>
           Code Network is planning to rebuild this website in 2025 as part of our transition towards more open club projects. We feel that this
           would be a great opportunity for our members to contribute to a real-world project.
@@ -47,7 +70,9 @@ export default function DesignCompetitionPage() {
           value={value}
           onChange={(e, val) => setValue(val)}
           textColor="inherit"
-          variant="fullWidth"
+          variant="scrollable"
+          scrollButtons
+          allowScrollButtonsMobile
         >
           <Tab label="Timeline" />
           <Tab label="Submission Requirements" />
@@ -67,15 +92,14 @@ export default function DesignCompetitionPage() {
                 </TableRow>
               </TableHead>
               <TableBody>
-                <TableRow sx={{ backgroundColor: "#e2ffde" }}>
+                <TableRow>
                   <TableCell>Expressions of Interest Open</TableCell>
                   <TableCell>21 October until 15 November 2024</TableCell>
                   <TableCell>
-                    People who would be interested in participating in the competition are asked to express their interest during this time period.<br/>
-                    <a style={{fontWeight: "bold", color: "#212e1f"}} href="https://docs.google.com/forms/d/e/1FAIpQLSeAQvYnytsWbxXIYVEA2YbxLoVAav-B6WQtMelCjCHkv-iLdw/viewform?usp=sf_link" target="_blank">Express your interest here!</a>
+                    People who would be interested in participating in the competition are asked to express their interest during this time period.
                   </TableCell>
                 </TableRow>
-                <TableRow>
+                <TableRow sx={{ backgroundColor: "#e2ffde" }}>
                   <TableCell>Entries Open</TableCell>
                   <TableCell>18 November 2024 until 10 February 2025</TableCell>
                   <TableCell>Submissions to be made via a Google Form. Link to be provided soon!</TableCell>
@@ -105,6 +129,7 @@ export default function DesignCompetitionPage() {
           <ul>
             <li>Can be of any format, but we strongly recommend using Figma.</li>
             <li>Can be of any level of fidelity, but preference will be given to high-fidelity designs</li>
+            <li>Please provide a version of the design for both desktop and mobile users.</li>
             <li>
               We are looking for wireframes that will be relevant to our website. Some suggestions are below, but you are not required to design all of these,
               and you are encouraged to add your own pages that you see are relevant.
@@ -118,7 +143,7 @@ export default function DesignCompetitionPage() {
                   </TableHead>
                   <TableBody>
                     <TableRow>
-                      <TableCell sx={{width: "20%"}}>Home Page</TableCell>
+                      <TableCell sx={{ width: "20%" }}>Home Page</TableCell>
                       <TableCell>This should act as the cover page to Code Network, and should provide any visitors to our site with a good indication of what our club is like overall. This is where your creativity should <b>shine!</b></TableCell>
                     </TableRow>
                     <TableRow>
@@ -168,13 +193,61 @@ export default function DesignCompetitionPage() {
               </TableContainer>
             </li>
           </ul>
-          <h3>Responsive Layout</h3>
-          <p>For each page, please provide a mobile device-responsive version.</p>
           <h3>Explanation of Design Choices</h3>
           <p>You will be asked to provide a brief statement to explain your overall design choices in your wireframes.</p>
         </CompetitionTab>
         <CompetitionTab index={2} currentIndex={value}>
-          <h3>Judging criteria coming soon!</h3>
+          <p>
+            Our team of judges will be looking at the following aspects of each design, and will be considering these when making a decision
+            on which design should proceed to the shortlist.
+          </p>
+          <TableContainer>
+            <Table>
+              <TableHead>
+                <TableRow>
+                  <TableCell sx={{ fontWeight: "bold" }}>Criteria</TableCell>
+                  <TableCell sx={{ fontWeight: "bold" }}>Question</TableCell>
+                  <TableCell sx={{ fontWeight: "bold" }}>Weighting</TableCell>
+                </TableRow>
+              </TableHead>
+              <TableBody>
+                <TableRow>
+                  <TableCell>Creativity</TableCell>
+                  <TableCell>How well does the design incorporate creative elements that make it stand out?</TableCell>
+                  <TableCell>20%</TableCell>
+                </TableRow>
+                <TableRow>
+                  <TableCell>Usability</TableCell>
+                  <TableCell>How well organised is the site content? How easy is the site to navigate and understand?</TableCell>
+                  <TableCell>20%</TableCell>
+                </TableRow>
+                <TableRow>
+                  <TableCell>Brand Identity</TableCell>
+                  <TableCell>How easily can a visitor tell that this is the Code Network website?</TableCell>
+                  <TableCell>20%</TableCell>
+                </TableRow>
+                <TableRow>
+                  <TableCell>Responsiveness</TableCell>
+                  <TableCell>How well does the prototype respond to / work with different form factors?</TableCell>
+                  <TableCell>15%</TableCell>
+                </TableRow>
+                <TableRow>
+                  <TableCell>Completeness</TableCell>
+                  <TableCell>How comprehensively does the website cover all aspects of our club?</TableCell>
+                  <TableCell>15%</TableCell>
+                </TableRow>
+                <TableRow>
+                  <TableCell>Presentation</TableCell>
+                  <TableCell>How well did the entrant explain their design choices and thought process?</TableCell>
+                  <TableCell>10%</TableCell>
+                </TableRow>
+              </TableBody>
+            </Table>
+          </TableContainer>
+          <p>
+            Please note that the judging panel may consider additional criteria in relation to the visual appeal and cohesiveness of the design
+            when making their final decision.
+          </p>
         </CompetitionTab>
         <CompetitionTab index={3} currentIndex={value}>
           <TableContainer>
