@@ -13,7 +13,7 @@ function CompetitionTab({ children, index, currentIndex }) {
 
 export default function DesignCompetitionPage() {
   const [value, setValue] = useState(0);
-  const [showEnterButton, setShowEnterButton] = useState(true);
+  const [showEnterButton, setShowEnterButton] = useState(false);
 
   const dueDateStr = '2025-02-10T00:00:00+10:00';
   const dueDate = new Date(dueDateStr)
@@ -25,7 +25,7 @@ export default function DesignCompetitionPage() {
       const now = new Date();
 
       if (now >= dueDate) {
-        setShowEnterButton(false);
+        setShowEnterButton(true);
       }
     };
 
@@ -39,9 +39,11 @@ export default function DesignCompetitionPage() {
     <main className="container">
       <div className="header" style={{ borderRadius: '0px', color: 'white', fontSize: '2rem', padding: "1em", textAlign: 'center', fontWeight: 'bold' }}>
         <h1 style={{ marginTop: "12px", marginBottom: "12px" }}>Code Network Website Re-Design Competition</h1>
-        <Alert severity="info" sx={{ maxWidth: "36em", marginX: "auto" }} action={
-          <Button href="https://codenetwork.notion.site/1311e884ce0d80eda987f9d6ddb9a06d?pvs=105" target="_blank" color="inherit" size="small" sx={{ ":hover": { color: "inherit" } }}>Enter your design here</Button>
-        }>Competition entries now open!</Alert>
+        {showEnterButton &&
+          <Alert severity="info" sx={{ maxWidth: "36em", marginX: "auto" }} action={
+            <Button href="https://codenetwork.notion.site/1311e884ce0d80eda987f9d6ddb9a06d?pvs=105" target="_blank" color="inherit" size="small" sx={{ ":hover": { color: "inherit" } }}>Enter your design here</Button>
+          }>Competition entries now open!</Alert>
+        }
         <CountdownSection initialDate={dueDateStr} />
       </div>
       <div className="edges">
@@ -281,8 +283,8 @@ export default function DesignCompetitionPage() {
           <h3>Logo</h3>
           <p>Logo resources to go here</p>
           <h3>Colour Scheme</h3>
-          <div style={{display: "flex", flexDirection: "row", alignItems: "center", gap: "0.5em"}}>
-            <div style={{width: "36px", height: "36px", backgroundColor: "#31cd3e"}}></div>
+          <div style={{ display: "flex", flexDirection: "row", alignItems: "center", gap: "0.5em" }}>
+            <div style={{ width: "36px", height: "36px", backgroundColor: "#31cd3e" }}></div>
             <span>Code Network Green</span>
           </div>
         </CompetitionTab>
