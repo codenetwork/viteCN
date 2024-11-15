@@ -40,11 +40,13 @@ export default function DesignCompetitionPage() {
       <div className="header" style={{ borderRadius: '0px', color: 'white', fontSize: '2rem', padding: "1em", textAlign: 'center', fontWeight: 'bold' }}>
         <h1 style={{ marginTop: "12px", marginBottom: "12px" }}>Code Network Website Re-Design Competition</h1>
         {showEnterButton &&
-          <Alert severity="info" sx={{ maxWidth: "36em", marginX: "auto" }} action={
-            <Button href="https://codenetwork.notion.site/1311e884ce0d80eda987f9d6ddb9a06d?pvs=105" target="_blank" color="inherit" size="small" sx={{ ":hover": { color: "inherit" } }}>Enter your design here</Button>
-          }>Competition entries now open!</Alert>
+          <>
+            <Alert severity="info" sx={{ maxWidth: "36em", marginX: "auto" }} action={
+              <Button href="https://codenetwork.notion.site/1311e884ce0d80eda987f9d6ddb9a06d?pvs=105" target="_blank" color="inherit" size="small" sx={{ ":hover": { color: "inherit" } }}>Enter your design here</Button>
+            }>Competition entries now open!</Alert>
+            <CountdownSection initialDate={dueDateStr} />
+          </>
         }
-        <CountdownSection initialDate={dueDateStr} />
       </div>
       <div className="edges">
         <h1>What's this all about?</h1>
@@ -281,11 +283,27 @@ export default function DesignCompetitionPage() {
         </CompetitionTab>
         <CompetitionTab index={5} currentIndex={value}>
           <h3>Logo</h3>
-          <p>Logo resources to go here</p>
+          <div style={{ display: "flex", flexDirection: "row", alignItems: "center", gap: "0.5em", marginBottom: "0.5em" }}>
+            <a href="/src/assets/CNLogo.svg" target="_blank"><img src="/src/assets/CNLogo.svg" style={{ backgroundColor: "black", padding: "8px", width: "fit-content" }} height={80} /></a>
+            <a href="/src/assets/CNLogo.svg" target="_blank">Code Network Logo (SVG Version)</a>
+          </div>
           <h3>Colour Scheme</h3>
-          <div style={{ display: "flex", flexDirection: "row", alignItems: "center", gap: "0.5em" }}>
-            <div style={{ width: "36px", height: "36px", backgroundColor: "#31cd3e" }}></div>
-            <span>Code Network Green</span>
+          <p>These are the colours we generally use around our website and marketing resources. Please do not feel restricted to these!</p>
+          <div style={{ display: "flex", flexDirection: "row", alignItems: "center", gap: "0.5em", marginBottom: "0.5em" }}>
+            <div style={{ width: "36px", height: "36px", backgroundColor: "#0A0D2A" }}></div>
+            <span><b>Dark Blue</b> #0A0D2A</span>
+          </div>
+          <div style={{ display: "flex", flexDirection: "row", alignItems: "center", gap: "0.5em", marginBottom: "0.5em" }}>
+            <div style={{ width: "36px", height: "36px", backgroundColor: "#101139" }}></div>
+            <span><b>Medium Blue</b> #101139</span>
+          </div>
+          <div style={{ display: "flex", flexDirection: "row", alignItems: "center", gap: "0.5em", marginBottom: "0.5em" }}>
+            <div style={{ width: "36px", height: "36px", backgroundColor: "#212154" }}></div>
+            <span><b>Light Blue</b> #212154</span>
+          </div>
+          <div style={{ display: "flex", flexDirection: "row", alignItems: "center", gap: "0.5em", marginBottom: "0.5em" }}>
+            <div style={{ width: "36px", height: "36px", backgroundColor: "#34CD3C" }}></div>
+            <span><b>Accent Green</b> #34CD3C</span>
           </div>
         </CompetitionTab>
       </div>

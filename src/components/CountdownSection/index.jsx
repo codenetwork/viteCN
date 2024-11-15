@@ -22,7 +22,7 @@ const CountdownSection = (initialDate) => {
 
   const [targetDate, setTargetDate] = useState(initialDate);
   const [timeLeft, setTimeLeft] = useState(calculateTimeLeft(initialDate));
-  const [heading, setHeading] = useState("Until the competition opens");
+  const [heading, setHeading] = useState("Until the competition closes");
 
   useEffect(() => {
     const timer = setTimeout(() => {
@@ -50,13 +50,13 @@ const CountdownSection = (initialDate) => {
   });
 
   if (timerComponents.length === 0) {
-    return null; 
+    return null;
   }
 
   return (
     <div className="countdown">
       <h2>{heading}</h2>
-      <div style={{fontFamily: "monospace"}}>{timerComponents}</div>
+      <div style={{ fontFamily: "monospace" }}>{timerComponents}</div>
     </div>
   );
 };
