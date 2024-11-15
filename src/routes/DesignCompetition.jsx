@@ -15,6 +15,8 @@ export default function DesignCompetitionPage() {
   const [value, setValue] = useState(0);
   const [showEnterButton, setShowEnterButton] = useState(false);
 
+  const openDateStr = '2024-11-18T00:00:00+10:00';
+  const openDate = new Date(openDateStr);
   const dueDateStr = '2025-02-10T00:00:00+10:00';
   const dueDate = new Date(dueDateStr)
 
@@ -25,12 +27,16 @@ export default function DesignCompetitionPage() {
       const now = new Date();
 
       if (now >= dueDate) {
+        setShowEnterButton(false);
+        return;
+      }
+      if (now >= openDate) {
         setShowEnterButton(true);
       }
     };
 
     checkTime();
-    const timer = setInterval(checkTime, 1000 * 60); // Check every minute
+    const timer = setInterval(checkTime, 1000); // Check every second
 
     return () => clearInterval(timer);
   }, [dueDate]);
