@@ -110,9 +110,14 @@ export default function DesignCompetitionPage() {
                   <TableCell>Submissions to be made via a Google Form. Link to be provided soon!</TableCell>
                 </TableRow>
                 <TableRow>
+                  <TableCell>Entrant Judging</TableCell>
+                  <TableCell>11 to 15 February 2025</TableCell>
+                  <TableCell>All entries will be judged by our judging panel, which will be comprised of key stakeholders from our Executive Team.</TableCell>
+                </TableRow>
+                <TableRow>
                   <TableCell>Shortlist Announced</TableCell>
                   <TableCell>16 February 2025</TableCell>
-                  <TableCell>The top 10 candidates will be announced and will be voted on by the community.</TableCell>
+                  <TableCell>The Top 10 entrants from the judging phase will be shortlisted and put to a community vote.</TableCell>
                 </TableRow>
                 <TableRow>
                   <TableCell>Community Vote</TableCell>
@@ -188,6 +193,13 @@ export default function DesignCompetitionPage() {
                       </TableCell>
                     </TableRow>
                     <TableRow>
+                      <TableCell>General Content</TableCell>
+                      <TableCell>
+                        If our club needs to publish a page with general information, how would the page look? Show us the typesetting and formatting
+                        that we would expect to see.
+                      </TableCell>
+                    </TableRow>
+                    <TableRow>
                       <TableCell>Anything Else</TableCell>
                       <TableCell>
                         Show us your creativity! What else do you think people visiting our website should be able to see?
@@ -203,8 +215,7 @@ export default function DesignCompetitionPage() {
         </CompetitionTab>
         <CompetitionTab index={2} currentIndex={value}>
           <p>
-            Our team of judges will be looking at the following aspects of each design, and will be considering these when making a decision
-            on which design should proceed to the shortlist.
+            All entries will be judged along the following criteria by our judging panel (excluding community vote).
           </p>
           <TableContainer>
             <Table>
@@ -234,25 +245,26 @@ export default function DesignCompetitionPage() {
                 <TableRow>
                   <TableCell>Responsiveness</TableCell>
                   <TableCell>How well does the prototype respond to / work with different form factors?</TableCell>
-                  <TableCell>15%</TableCell>
+                  <TableCell>10%</TableCell>
                 </TableRow>
                 <TableRow>
                   <TableCell>Completeness</TableCell>
                   <TableCell>How comprehensively does the website cover all aspects of our club?</TableCell>
-                  <TableCell>15%</TableCell>
+                  <TableCell>10%</TableCell>
                 </TableRow>
                 <TableRow>
                   <TableCell>Presentation</TableCell>
                   <TableCell>How well did the entrant explain their design choices and thought process?</TableCell>
                   <TableCell>10%</TableCell>
                 </TableRow>
+                <TableRow>
+                  <TableCell>Community Vote</TableCell>
+                  <TableCell>Members of the Code Network Community will be asked to rank the designs. Each shortlisted design will receive a score reflective of their average ranking.</TableCell>
+                  <TableCell>10%</TableCell>
+                </TableRow>
               </TableBody>
             </Table>
           </TableContainer>
-          <p>
-            Please note that the judging panel may consider additional criteria in relation to the visual appeal and cohesiveness of the design
-            when making their final decision.
-          </p>
         </CompetitionTab>
         <CompetitionTab index={3} currentIndex={value}>
           <TableContainer>
@@ -280,11 +292,12 @@ export default function DesignCompetitionPage() {
         <CompetitionTab index={4} currentIndex={value}>
           <p>Please direct any questions to <a href="mailto:hello@codenetwork.co">hello@codenetwork.co</a>.</p>
           <p>We would be happy to answer any questions relating to the competition or about what we would like to see from the website.</p>
+          <p>You are also welcome to contact us if you would like some feedback on your draft design.</p>
         </CompetitionTab>
         <CompetitionTab index={5} currentIndex={value}>
           <h3>Logo</h3>
           <div style={{ display: "flex", flexDirection: "row", alignItems: "center", gap: "0.5em", marginBottom: "0.5em" }}>
-            <a href="/src/assets/CNLogo.svg" target="_blank"><img src="/src/assets/CNLogo.svg" style={{ backgroundColor: "black", padding: "8px", width: "fit-content" }} height={80} /></a>
+            <a href="/src/assets/CNLogo.svg" target="_blank"><img src="/src/assets/CNLogo.svg" style={{ backgroundColor: "#0A0D2A", padding: "8px", width: "fit-content" }} height={80} /></a>
             <a href="/src/assets/CNLogo.svg" target="_blank">Code Network Logo (SVG Version)</a>
           </div>
           <h3>Colour Scheme</h3>
