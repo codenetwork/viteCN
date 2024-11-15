@@ -104,7 +104,7 @@ export default function DesignCompetitionPage() {
                     People who would be interested in participating in the competition are asked to express their interest during this time period.
                   </TableCell>
                 </TableRow>
-                <TableRow sx={{ backgroundColor: "#e2ffde" }}>
+                <TableRow sx={{ backgroundColor: showEnterButton ? "#e2ffde" : "white" }}>
                   <TableCell>Entries Open</TableCell>
                   <TableCell>18 November 2024 until 10 February 2025</TableCell>
                   <TableCell>Submissions to be made via {showEnterButton ? <a href="https://codenetwork.notion.site/1311e884ce0d80eda987f9d6ddb9a06d?pvs=105">this link</a> : <span>a link to be provided soon!</span>}<br /><b>Please note the 48 hour late submission period does not apply for this competition!</b></TableCell>
