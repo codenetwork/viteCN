@@ -254,8 +254,8 @@ export default function DesignCompetitionPage() {
                   <TableCell>10%</TableCell>
                 </TableRow>
                 <TableRow>
-                  <TableCell>Completeness</TableCell>
-                  <TableCell>How comprehensively does the website cover all aspects of our club?</TableCell>
+                  <TableCell>Cohesiveness</TableCell>
+                  <TableCell>How cohesive is the design overall? Does it all feel like one website promoting Code Network?</TableCell>
                   <TableCell>10%</TableCell>
                 </TableRow>
                 <TableRow>
