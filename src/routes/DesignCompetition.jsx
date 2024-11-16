@@ -303,8 +303,12 @@ export default function DesignCompetitionPage() {
         <CompetitionTab index={5} currentIndex={value}>
           <h3>Logo</h3>
           <div style={{ display: "flex", flexDirection: "row", alignItems: "center", gap: "0.5em", marginBottom: "0.5em" }}>
-            <a href="/src/assets/CNLogo.svg" target="_blank"><img src="/src/assets/CNLogo.svg" style={{ backgroundColor: "#0A0D2A", padding: "8px", width: "fit-content" }} height={80} /></a>
-            <a href="/src/assets/CNLogo.svg" target="_blank">Code Network Logo (SVG Version)</a>
+            <a href="./logo.svg" target="_blank"><img src="./logo.svg" style={{ backgroundColor: "#0A0D2A", padding: "8px", width: "fit-content" }} height={80} /></a>
+            <a href="./logo.svg" target="_blank">Code Network Logo (SVG Version)</a>
+          </div>
+          <div style={{ display: "flex", flexDirection: "row", alignItems: "center", gap: "0.5em", marginBottom: "0.5em" }}>
+            <a href="./logo.png" target="_blank"><img src="./logo.png" style={{ backgroundColor: "#0A0D2A", padding: "8px", width: "fit-content" }} height={80} /></a>
+            <a href="./logo.png" target="_blank">Code Network Logo (PNG Version)</a>
           </div>
           <h3>Colour Scheme</h3>
           <p>These are the colours we generally use around our website and marketing resources. Please do not feel restricted to these!</p>
