@@ -1,5 +1,6 @@
 import Sponsor from './Sponsor';
 import { Launch, Link } from '@mui/icons-material';
+import "./Header.css";
 
 function Header() {
     return (
@@ -10,7 +11,7 @@ function Header() {
                         <img src="./logo.png" alt="Code Network logo" />
                         <h1>Join the community</h1>
                         <div style={{ marginBottom: "32px" }}>
-                            <a style={{ backgroundColor: "#34cd3c", color: "white", padding: "0.5em 2em", borderRadius: "0.5em", fontSize: "1.5em", fontWeight: "bold" }} href="/competition">Can you design our new website? <Link style={{ marginLeft: "0.5rem" }} /></a>
+                            <a className="emph-btn" href="/competition">✨ Can you design our new website? ✨<Link style={{ marginLeft: "0.5rem" }} /></a>
                         </div>
                         <a href="https://qutcode.getqpay.com/" id="action">Sign up <Launch style={{ marginLeft: "0.5rem" }} /></a>
                         <p> </p>

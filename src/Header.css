@@ -1,0 +1,26 @@
+.emph-btn {
+  background-color: #34cd3c;
+  color: white;
+  padding: 0.5em 2em;
+  border-radius: 0.5em;
+  font-size: 1.5em;
+  font-weight: bold;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  transition: all 0.1s;
+}
+
+.emph-btn:hover {
+  color: white;
+  scale: 110%;
+}
+
+.emph-btn:focus {
+  background-color: #2a9630;
+}
+
