@@ -143,8 +143,8 @@ export default function DesignCompetitionPage() {
         </CompetitionTab>
         <CompetitionTab index={1} currentIndex={value}>
           <h3>Competition Eligibility</h3>
-          <p>To enter this competition, you must be a <b>current</b> student at the Queensland University of Technology as of Semester 2, 2024.</p>
-          <p>We are happy to accept submissions from students who are graduating at the end of Semester 2, 2024.</p>
+          <p>To enter this competition, you must be a <b>current</b> student at the Queensland University of Technology as of Semester 1, 2025.</p>
+          <p>We are unable to accept submissions from students who are graduating in Semester 2, 2024 at this time.</p>
         </CompetitionTab>
         <CompetitionTab index={2} currentIndex={value}>
           <h3>Design Mock-ups</h3>
