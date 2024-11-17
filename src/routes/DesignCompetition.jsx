@@ -85,6 +85,7 @@ export default function DesignCompetitionPage() {
           allowScrollButtonsMobile
         >
           <Tab label="Timeline" />
+          <Tab label="Eligibility" />
           <Tab label="Submission Requirements" />
           <Tab label="Judging Criteria" />
           <Tab label="Prizes" />
@@ -141,6 +142,11 @@ export default function DesignCompetitionPage() {
           <p>Please note, this timeline is subject to change at the discretion of the Executive Team. Please check back regularly for the latest details.</p>
         </CompetitionTab>
         <CompetitionTab index={1} currentIndex={value}>
+          <h3>Competition Eligibility</h3>
+          <p>To enter this competition, you must be a <b>current</b> student at the Queensland University of Technology as of Semester 2, 2024.</p>
+          <p>We are happy to accept submissions from students who are graduating at the end of Semester 2, 2024.</p>
+        </CompetitionTab>
+        <CompetitionTab index={2} currentIndex={value}>
           <h3>Design Mock-ups</h3>
           <ul>
             <li>Can be of any format, but we strongly recommend using Figma.</li>
@@ -219,7 +225,7 @@ export default function DesignCompetitionPage() {
           <h3>Explanation of Design Choices</h3>
           <p>You will be asked to provide a brief statement to explain your overall design choices in your wireframes.</p>
         </CompetitionTab>
-        <CompetitionTab index={2} currentIndex={value}>
+        <CompetitionTab index={3} currentIndex={value}>
           <p>
             All entries will be judged along the following criteria by our judging panel (excluding community vote).
           </p>
@@ -272,7 +278,7 @@ export default function DesignCompetitionPage() {
             </Table>
           </TableContainer>
         </CompetitionTab>
-        <CompetitionTab index={3} currentIndex={value}>
+        <CompetitionTab index={4} currentIndex={value}>
           <TableContainer>
             <Table>
               <TableHead>
@@ -295,12 +301,12 @@ export default function DesignCompetitionPage() {
           </TableContainer>
           <p>Other prizes may also be announced at the discretion of the Executive Team.</p>
         </CompetitionTab>
-        <CompetitionTab index={4} currentIndex={value}>
+        <CompetitionTab index={5} currentIndex={value}>
           <p>Please direct any questions to <a href="mailto:hello@codenetwork.co">hello@codenetwork.co</a>.</p>
           <p>We would be happy to answer any questions relating to the competition or about what we would like to see from the website.</p>
           <p>You are also welcome to contact us if you would like some feedback on your draft design.</p>
         </CompetitionTab>
-        <CompetitionTab index={5} currentIndex={value}>
+        <CompetitionTab index={6} currentIndex={value}>
           <h3>Logo</h3>
           <div style={{ display: "flex", flexDirection: "row", alignItems: "center", gap: "0.5em", marginBottom: "0.5em" }}>
             <a href="./logo.svg" target="_blank"><img src="./logo.svg" style={{ backgroundColor: "#0A0D2A", padding: "8px", width: "fit-content" }} height={80} /></a>
