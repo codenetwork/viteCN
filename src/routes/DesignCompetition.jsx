@@ -72,8 +72,7 @@ export default function DesignCompetitionPage() {
         <p>
           And then we thought, why stop with the code? Why don't we give our members a chance to design our website? <b>That's where you come in!</b>
         </p>
-        <h1>Your Mission...</h1>
-        <p>...should you choose to accept it, is to show us your design skills and to create the coolest website anyone has ever seen!</p>
+        <p style={{textAlign: 'center', fontSize: '1.5rem', padding: "1em 0em", borderTop: "0.1em solid #34cd3c", borderBottom: "0.1em solid #34cd3c"}}>Your mission is to <b>create an awesome new design for our website!</b></p>
 
         <h1>All the details:</h1>
         <Tabs
