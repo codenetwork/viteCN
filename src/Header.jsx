@@ -13,7 +13,7 @@ function Header() {
                         <div style={{ marginBottom: "32px" }}>
                             <a className="emph-btn" href="/competition">✨ Can you design our new website? ✨<Link style={{ marginLeft: "0.5rem" }} /></a>
                         </div>
-                        <a href="https://qutcode.getqpay.com/" id="action">Sign up <Launch style={{ marginLeft: "0.5rem" }} /></a>
+                        <a href="https://campus.hellorubric.com/?tab=memberships&s=4917" target="_blank" id="action">Sign up <Launch style={{ marginLeft: "0.5rem" }} /></a>
                         <p> </p>
                         <table style={{ margin: "0 auto" }}>
                             <tr>
