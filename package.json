@@ -17,6 +17,7 @@
     "@fortawesome/fontawesome-free": "^6.5.2",
     "@mui/icons-material": "^5.11.9",
     "@mui/material": "^5.11.10",
+    "@notionhq/client": "^2.2.15",
     "animate.css": "^4.1.1",
     "gh-pages": "^5.0.0",
     "react": "^18.2.0",

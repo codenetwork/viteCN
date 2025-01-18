@@ -14,6 +14,7 @@ import SGM from "./Sgm";
 
 import HackathonPage from "@/routes/Hackathon";
 import DesignCompetitionPage from "./routes/DesignCompetition";
+import ProjectsPage from "./routes/Projects";
 
 function App() {
   return (
@@ -32,6 +33,7 @@ function App() {
           <Route path="/sgm" element={<SGM />} />
           <Route path="/hackathon" element={<HackathonPage />} />
           <Route path="/competition" element={<DesignCompetitionPage />} />
+          <Route path="/projects" element={<ProjectsPage />} />
         </Routes>
       </section>
     </div>
