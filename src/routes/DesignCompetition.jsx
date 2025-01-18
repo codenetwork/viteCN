@@ -14,6 +14,7 @@ function CompetitionTab({ children, index, currentIndex }) {
 export default function DesignCompetitionPage() {
   const [value, setValue] = useState(0);
   const [showEnterButton, setShowEnterButton] = useState(false);
+  const [compClosed, setCompClosed] = useState(false)
 
   const openDateStr = '2024-11-18T00:00:00+10:00';
   const openDate = new Date(openDateStr);
@@ -28,6 +29,7 @@ export default function DesignCompetitionPage() {
 
       if (now >= dueDate) {
         setShowEnterButton(false);
+        setCompClosed(true)
         return;
       }
       if (now >= openDate) {
@@ -53,6 +55,7 @@ export default function DesignCompetitionPage() {
             <CountdownSection initialDate={dueDateStr} />
           </>
         }
+        {compClosed && <h2 className="countdown" style={{fontFamily: "monospace"}}>COMPETITION CLOSED</h2>}
       </div>
       <div className="edges">
         <h1>What's this all about?</h1>
@@ -113,7 +116,7 @@ export default function DesignCompetitionPage() {
                 <TableRow sx={{ backgroundColor: showEnterButton ? "#e2ffde" : "white" }}>
                   <TableCell>Entries Open</TableCell>
                   <TableCell>18 November 2024 until 10 February 2025</TableCell>
-                  <TableCell>Submissions to be made via {showEnterButton ? <a href="https://codenetwork.notion.site/1311e884ce0d80eda987f9d6ddb9a06d?pvs=105">this link</a> : <span>a link to be provided soon!</span>}<br /><b>Please note the 48 hour late submission period does not apply for this competition!</b></TableCell>
+                  <TableCell>{!compClosed && <>Submissions to be made via {showEnterButton ? <a href="https://codenetwork.notion.site/1311e884ce0d80eda987f9d6ddb9a06d?pvs=105">this link</a> : <span>a link to be provided soon!</span>}<br /><b>Please note the 48 hour late submission period does not apply for this competition!</b></>}</TableCell>
                 </TableRow>
                 <TableRow>
                   <TableCell>Entrant Judging</TableCell>
@@ -180,20 +183,24 @@ export default function DesignCompetitionPage() {
                       <TableCell>Show us, if we had a major event coming up, such as our Winter Hackathon, what should people see?</TableCell>
                     </TableRow>
                     <TableRow>
-                      <TableCell>Projects Showcase</TableCell>
-                      <TableCell>A place for our members to display the cool things they have been building as part of our club.</TableCell>
+                      <TableCell>Member Projects Showcase</TableCell>
+                      <TableCell>
+                        Our members build awesome projects throughout the year, such as at our Project Nights, Winter Hackathon, and other
+                        special events. This page should be where members can show off the cool things they have built. They should also
+                        have a link to a form where they can submit their project for display.
+                      </TableCell>
                     </TableRow>
                     <TableRow>
                       <TableCell>Club Projects</TableCell>
                       <TableCell>
-                        This is a place for people to see the projects our club is building that they can contribute to.
-                        Different from the Projects Showcase in that the showcase page is more of a hall of fame, while
-                        the Club Projects is where members can find things they can contribute to.
+                        This year, our club is running a range of projects that our members can contribute towards. On this section of
+                        the site, we want to list the projects our members can contribute to, show them how they can contribute, and point
+                        them towards where they can find further information (e.g. GitHub repository, our Discord server).
                       </TableCell>
                     </TableRow>
                     <TableRow>
                       <TableCell>Blog</TableCell>
-                      <TableCell>Where our club shares the latest updates regarding what's happening</TableCell>
+                      <TableCell>Where our club shares the latest updates regarding what's happening.</TableCell>
                     </TableRow>
                     <TableRow>
                       <TableCell>Industry Engagement</TableCell>
@@ -206,8 +213,9 @@ export default function DesignCompetitionPage() {
                     <TableRow>
                       <TableCell>General Content</TableCell>
                       <TableCell>
-                        If our club needs to publish a page with general information, how would the page look? Show us the typesetting and formatting
-                        that we would expect to see.
+                        If our club needs to publish a page with general information, how would the page look? Show us how we should typeset
+                        and format our basic content pages (this is basically a <a href="https://loremipsum.io/" target="_blank">"Lorem Ipsum"</a> page - 
+                        doesn't need to have actual content on it.)
                       </TableCell>
                     </TableRow>
                     <TableRow>
@@ -222,7 +230,11 @@ export default function DesignCompetitionPage() {
             </li>
           </ul>
           <h3>Explanation of Design Choices</h3>
-          <p>You will be asked to provide a brief statement to explain your overall design choices in your wireframes.</p>
+          <p>
+            You will be asked to provide a brief statement to explain your overall design choices in your wireframes. This doesn't need to be an exhaustive
+            explanation, but this is an opportunity to explain any big design decisions that you made so we can take these into consideration when evaluting
+            your design.
+          </p>
         </CompetitionTab>
         <CompetitionTab index={3} currentIndex={value}>
           <p>
@@ -334,8 +346,8 @@ export default function DesignCompetitionPage() {
             <span><b>Accent Green</b> #34CD3C</span>
           </div>
         </CompetitionTab>
+        <p>Last Updated: 18 January 2024</p>
       </div>
-
     </main>
   )
 }
