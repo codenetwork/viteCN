@@ -18,7 +18,7 @@ export default function DesignCompetitionPage() {
 
   const openDateStr = '2024-11-18T00:00:00+10:00';
   const openDate = new Date(openDateStr);
-  const dueDateStr = '2025-02-10T00:00:00+10:00';
+  const dueDateStr = '2025-02-11T00:00:00+10:00';
   const dueDate = new Date(dueDateStr)
 
   useEffect(() => {
