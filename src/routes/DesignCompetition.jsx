@@ -346,7 +346,7 @@ export default function DesignCompetitionPage() {
             <span><b>Accent Green</b> #34CD3C</span>
           </div>
         </CompetitionTab>
-        <p>Last Updated: 13 February 2024</p>
+        <p>Last Updated: 13 February 2025</p>
       </div>
     </main>
   )
