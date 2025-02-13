@@ -55,7 +55,7 @@ export default function DesignCompetitionPage() {
             <CountdownSection initialDate={dueDateStr} />
           </>
         }
-        {compClosed && <h2 className="countdown" style={{fontFamily: "monospace"}}>COMPETITION CLOSED</h2>}
+        {compClosed && <h2 className="countdown" style={{fontFamily: "monospace"}}>COMPETITION CLOSED - JUDGING UNDERWAY</h2>}
       </div>
       <div className="edges">
         <h1>What's this all about?</h1>
@@ -118,12 +118,12 @@ export default function DesignCompetitionPage() {
                   <TableCell>18 November 2024 until 10 February 2025</TableCell>
                   <TableCell>{!compClosed && <>Submissions to be made via {showEnterButton ? <a href="https://codenetwork.notion.site/1311e884ce0d80eda987f9d6ddb9a06d?pvs=105">this link</a> : <span>a link to be provided soon!</span>}<br /><b>Please note the 48 hour late submission period does not apply for this competition!</b></>}</TableCell>
                 </TableRow>
-                <TableRow>
+                <TableRow sx={{ backgroundColor: "#e2ffde" }}>
                   <TableCell>Entrant Judging</TableCell>
-                  <TableCell>11 to 15 February 2025</TableCell>
+                  <TableCell>11 to 23 February 2025</TableCell>
                   <TableCell>All entries will be judged by our judging panel, which will be comprised of key stakeholders from our Executive Team.</TableCell>
                 </TableRow>
-                <TableRow>
+                {/* <TableRow>
                   <TableCell>Shortlist Announced</TableCell>
                   <TableCell>16 February 2025</TableCell>
                   <TableCell>The Top 10 entrants from the judging phase will be shortlisted and put to a community vote.</TableCell>
@@ -132,10 +132,10 @@ export default function DesignCompetitionPage() {
                   <TableCell>Community Vote</TableCell>
                   <TableCell>17 to 20 February 2025</TableCell>
                   <TableCell>Members of the Code Network community will be asked to vote on their favourite design.</TableCell>
-                </TableRow>
+                </TableRow> */}
                 <TableRow>
                   <TableCell>Winning Design Announced</TableCell>
-                  <TableCell>TBA</TableCell>
+                  <TableCell>24 February 2025</TableCell>
                   <TableCell>The winning design will be announced at the first Code Network event of the year. Shortlisted candidates will be invited to attend to be recognised in-person.</TableCell>
                 </TableRow>
               </TableBody>
@@ -346,7 +346,7 @@ export default function DesignCompetitionPage() {
             <span><b>Accent Green</b> #34CD3C</span>
           </div>
         </CompetitionTab>
-        <p>Last Updated: 18 January 2024</p>
+        <p>Last Updated: 13 February 2024</p>
       </div>
     </main>
   )
