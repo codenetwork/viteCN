@@ -4,10 +4,43 @@ import "../styles/projects.css"
 // /** @jsxImportSource @emotion/react */
 // import { css } from "@emotion/react"
 
-const notion = new Client({
-  auth: "ntn_L8195984909bh0XIp4lyT9y042Vqef5Vde63Ey2EuWq6x1",
-  baseUrl: location.origin + "/api"
-})
+// const notion = new Client({
+//   auth: import.meta.VITE_NOTION_KEY,
+//   baseUrl: location.origin + "/api"
+// })
+
+const projects = [
+  {
+    title: "Gesture Recognition",
+    emoji: "🕺",
+    repo: "https://www.google.com",
+    tags: [{name: "Machine Learning", color: "blue"}]
+  },
+  {
+    title: "BetterTimetable",
+    emoji: "📅",
+    repo: "https://github.com/codenetwork/betterTimetable",
+    tags: [{name: "Web", color: "red"}]
+  },
+  {
+    title: "Nightshade for Canvas",
+    emoji: "🌼",
+    repo: "https://github.com/twirlyseal/nightshade",
+    tags: [{name: "Web", color: "red"}, {name: "Design", color: "orange"}]
+  },
+  {
+    title: "Code Network Website Rebuild",
+    emoji: "🌐",
+    repo: "https://github.com/codenetwork/codenetwork.co",
+    tags: [{name: "Web", color: "red"}, {name: "Design", color: "orange"}]
+  },
+  {
+    title: "Code Network Discord Bot",
+    emoji: "🤖",
+    repo: "https://github.com/codenetwork/discord-bot-v3",
+    tags: [{name: "Discord", color: "green"}]
+  },
+]
 
 // Source: https://notioneers.eu/en/insights/notion-colors-codes
 const notionBgColorMap = {
@@ -37,27 +70,27 @@ const notionFgColorMap = {
 }
 
 export default function ProjectsPage() {
-  const [projects, setProjects] = useState();
+  // const [projects, setProjects] = useState();
 
-  useEffect(() => {
-    document.title = "Projects | Code Network";
+  // useEffect(() => {
+  //   document.title = "Projects | Code Network";
     
-    async function fetchData() {
-      const databaseId = "5bdf608c128647368673c36a2b549566"
-      const response = await notion.databases.query({
-        database_id: databaseId,
-        filter: {
-          property: "Status",
-          status: {
-            equals: "Active"
-          }
-        }
-      })
-      setProjects(response.results)
-      // console.log(response.results)
-    }
-    fetchData()
-  }, [])
+  //   async function fetchData() {
+  //     const databaseId = "5bdf608c128647368673c36a2b549566"
+  //     const response = await notion.databases.query({
+  //       database_id: databaseId,
+  //       filter: {
+  //         property: "Status",
+  //         status: {
+  //           equals: "Active"
+  //         }
+  //       }
+  //     })
+  //     setProjects(response.results)
+  //     // console.log(response.results)
+  //   }
+  //   fetchData()
+  // }, [])
 
   return (
     <main className="container">
@@ -76,13 +109,13 @@ export default function ProjectsPage() {
           {projects.map(project =>
             <a
               className="project-card"
-              href={project.properties["GitHub Repo"].url}
+              href={project.repo}
               target="_blank"
             >
-              <span style={{ fontSize: "2em" }}>{project.icon?.emoji}</span>
-              <span>{project.properties.Name.title[0].text.content}</span>
-              <span style={{ display: "flex", gap: "0.25em", fontSize: "0.75em" }}>{project.properties.Tags.multi_select.map(tag =>
-                <span class="project-badge" style={{ backgroundColor: notionBgColorMap[tag.color], color: notionFgColorMap[tag.Color], padding: "0.25em", borderRadius: "0.25em" }}>{tag.name}</span>
+              <span style={{ fontSize: "2em" }}>{project.emoji}</span>
+              <span>{project.title}</span>
+              <span style={{ display: "flex", gap: "0.25em", fontSize: "0.75em" }}>{project.tags.map(tag =>
+                <span class="project-badge" style={{ backgroundColor: notionBgColorMap[tag.color], padding: "0.25em", borderRadius: "0.25em" }}>{tag.name}</span>
               )}</span>
             </a>)}
         </div> : <p>Loading our current projects...</p>}
