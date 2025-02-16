@@ -5,7 +5,7 @@ import "../styles/projects.css"
 // import { css } from "@emotion/react"
 
 const notion = new Client({
-  auth: import.meta.env.VITE_NOTION_KEY,
+  auth: "ntn_L8195984909bh0XIp4lyT9y042Vqef5Vde63Ey2EuWq6x1",
   baseUrl: location.origin + "/api"
 })
 
