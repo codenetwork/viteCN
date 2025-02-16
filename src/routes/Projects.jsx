@@ -40,6 +40,8 @@ export default function ProjectsPage() {
   const [projects, setProjects] = useState();
 
   useEffect(() => {
+    document.title = "Projects | Code Network";
+    
     async function fetchData() {
       const databaseId = "5bdf608c128647368673c36a2b549566"
       const response = await notion.databases.query({
@@ -62,6 +64,13 @@ export default function ProjectsPage() {
       <div className="edges">
         <h1>Code Network Projects</h1>
         <p>Looking to flex your coding muscles? Help us build the most awesome projects!</p>
+        <p>Ways you can contribute to our projects:</p>
+        <ul>
+          <li>Writing code</li>
+          <li>Testing and writing issues</li>
+          <li>Writing documentation</li>
+          <li>Coming up with new feature ideas</li>
+        </ul>
         <h2>Our Current Projects</h2>
         {projects ? <div style={{ display: "grid", gridTemplateColumns: "auto auto auto", gap: "0.5em" }}>
           {projects.map(project =>
