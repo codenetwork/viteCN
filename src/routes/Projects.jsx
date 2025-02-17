@@ -105,7 +105,7 @@ export default function ProjectsPage() {
           <li>Coming up with new feature ideas</li>
         </ul>
         <h2>Our Current Projects</h2>
-        {projects ? <div style={{ display: "grid", gridTemplateColumns: "auto auto auto", gap: "0.5em" }}>
+        {projects ? <div className="project-list">
           {projects.map(project =>
             <a
               className="project-card"
