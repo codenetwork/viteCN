@@ -72,8 +72,8 @@ const notionFgColorMap = {
 export default function ProjectsPage() {
   // const [projects, setProjects] = useState();
 
-  // useEffect(() => {
-  //   document.title = "Projects | Code Network";
+  useEffect(() => {
+    document.title = "Projects | Code Network";
     
   //   async function fetchData() {
   //     const databaseId = "5bdf608c128647368673c36a2b549566"
@@ -90,7 +90,7 @@ export default function ProjectsPage() {
   //     // console.log(response.results)
   //   }
   //   fetchData()
-  // }, [])
+  }, [])
 
   return (
     <main className="container">
