@@ -7,6 +7,10 @@
     .project-list {
         grid-template-columns: 1fr 1fr 1fr;
     }
+
+    .project-ways {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
 }
 
 .project-card {
@@ -17,8 +21,23 @@
     display: flex;
     align-items: center;
     gap: 1em;
+    font-weight: bold;
 }
 
 .project-card:hover>*>.project-badge {
     color: white
+}
+
+.project-ways {
+    display: grid;
+    gap: 0.5em;
+}
+
+.project-ways>div {
+    background-color: #212154;
+    color: white;
+    padding: 1em;
+    border-radius: 0.5em;
+    text-align: center;
+    font-weight: bold;
 }

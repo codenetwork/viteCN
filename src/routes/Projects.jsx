@@ -95,16 +95,15 @@ export default function ProjectsPage() {
   return (
     <main className="container">
       <div className="edges">
-        <h1>Code Network Projects</h1>
-        <p>Looking to flex your coding muscles? Help us build the most awesome projects!</p>
-        <p>Ways you can contribute to our projects:</p>
-        <ul>
-          <li>Writing code</li>
-          <li>Testing and writing issues</li>
-          <li>Writing documentation</li>
-          <li>Coming up with new feature ideas</li>
-        </ul>
-        <h2>Our Current Projects</h2>
+        <h1>Our Club's Projects</h1>
+        <p style={{textAlign: 'center', fontSize: '1.5rem', padding: "1em 0em", borderTop: "0.1em solid #34cd3c", borderBottom: "0.1em solid #34cd3c"}}>
+          Looking to flex your coding muscles? <b>Help us build the most awesome projects in 2025!</b>
+          </p>
+        
+        {/* <h2>Our Current Projects</h2> */}
+        {/* <p>Click on any of the projects below to see the GitHub repository!</p> */}
+        <p style={{textAlign: "center", fontSize: "1.4rem", fontWeight: "bold", marginBottom: "0.1em"}}>Here's what we're building this year!</p>
+        <p style={{textAlign: "center", marginTop: "0"}}>Click a project to open its GitHub repository</p>
         {projects ? <div className="project-list">
           {projects.map(project =>
             <a
@@ -119,6 +118,16 @@ export default function ProjectsPage() {
               )}</span>
             </a>)}
         </div> : <p>Loading our current projects...</p>}
+        <h2 style={{marginBottom: "0.5em", marginTop: "1.5em", fontSize: "1.5rem", fontWeight: "medium"}}>Ways you can contribute to our projects:</h2>
+        <div className="project-ways">
+          <div>🧑‍💻 Writing code</div>
+          <div>🚩 Testing and writing issues</div>
+          <div>📖 Writing documentation</div>
+          <div>💡 Coming up with new feature ideas</div>
+        </div>
+        <h2 style={{marginBottom: "0.5em",  fontSize: "1.5rem", fontWeight: "medium"}}>Join us at our Project Nights!</h2>
+        <p>Interested in helping us to build our cool projects? Join us at our weekly project nights on <b>Mondays 5-8pm</b> starting February 24th 2025!</p>
+        <p>See our social media pages for further details!</p>
       </div>
     </main>
   )
