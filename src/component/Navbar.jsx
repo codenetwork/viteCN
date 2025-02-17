@@ -43,6 +43,7 @@ function Navbar() {
             </div>
           </div>
           <a href="/rules">Rules</a>
+          <a href="/projects">Projects</a>
           <a href="/competition">✨ Design Competition ✨</a>
 
           <button className="nav-btn nav-close-btn" onClick={showNavbar}>
