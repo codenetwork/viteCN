@@ -59,3 +59,30 @@
         gap: 0.6em;
     }
 }
+
+.project-flow {
+    display: flex;
+    align-items: center;
+}
+
+@media screen and (max-width: 1200px) {
+    .project-flow {
+        flex-direction: column;
+        gap: 0.6em;
+    }
+
+    .project-flow>img {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .project-flow {
+        flex-direction: row;
+        gap: 0.6em;
+    }
+
+    .project-flow>img {
+        width: 50%
+    }
+}

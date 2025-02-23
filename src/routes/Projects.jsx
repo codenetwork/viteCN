@@ -127,6 +127,17 @@ export default function ProjectsPage() {
           <div>📖 Writing documentation</div>
           <div>💡 Coming up with new feature ideas</div>
         </div>
+        <h2 style={{ marginBottom: "0.5em", fontSize: "1.5rem", fontWeight: "medium" }}>Project Contribution Flow</h2>
+        <div className="project-flow">
+          <img src="/project_flow.png" />
+          <ol>
+            <li>Create a fork from your chosen project.</li>
+            <li>Make commits on your project fork.</li>
+            <li>Open a pull request to the Code Network repo when ready.</li>
+            <li>Make further commits to your fork, and discuss in the pull request.</li>
+            <li>When our team is satisfied with the changes, we'll merge into our repository.</li>
+          </ol>
+        </div>
         <h2 style={{ marginBottom: "0.5em", fontSize: "1.5rem", fontWeight: "medium" }}>Join us at our Project Nights!</h2>
         <p>Interested in helping us to build our cool projects? Join us at our weekly project nights on <b>Mondays 5-8pm</b> starting February 24th 2025!</p>
         <p>See our social media pages for further details!</p>
