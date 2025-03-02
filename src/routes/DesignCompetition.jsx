@@ -2,6 +2,7 @@ import CountdownSection from "@/components/CountdownSection";
 import "@/styles/design-comp.css"
 import { Alert, Button, Tab, Table, TableBody, TableCell, TableContainer, TableHead, TableRow, Tabs } from "@mui/material"
 import { useState, useEffect } from "react"
+import { FaDownload, FaLink } from "react-icons/fa";
 
 function CompetitionTab({ children, index, currentIndex }) {
   return (
@@ -55,10 +56,36 @@ export default function DesignCompetitionPage() {
             <CountdownSection initialDate={dueDateStr} />
           </>
         }
-        {compClosed && <h2 className="countdown" style={{fontFamily: "monospace"}}>COMPETITION CLOSED - JUDGING UNDERWAY</h2>}
+        {compClosed && <h2 className="countdown" style={{ fontFamily: "monospace" }}>Congratulations and thank you to our awesome entrants!</h2>}
       </div>
       <div className="edges">
-        <h1>What's this all about?</h1>
+        <div style={{ maxWidth: "800px", backgroundColor: "#0A0D2A", margin: "0 auto", color: "white", padding: "8px", borderRadius: "8px", textAlign: "center" }}>
+          <div style={{ fontWeight: "bolder" }}>🥇 First Prize</div>
+          <div style={{ fontSize: "2rem", fontWeight: "bolder" }}>Jose Hernandez</div>
+          <img src="/designcomp/jose.png" style={{ width: "90%", margin: "0.5em 0" }} />
+          <div><a target="_blank" href="https://www.figma.com/proto/dQMa4Xgqcl1ydbMDKF5pDX/Code-network-Desktop?page-id=0%3A1&node-id=1-2022&viewport=-1450%2C-95%2C0.08&t=BjTI1ncc2Uu8hTWn-1&scaling=scale-down-width&content-scaling=fixed"><FaLink /> View the design</a></div>
+        </div>
+        <div class="winning-designs" style={{ display: "flex", justifyContent: "center", gap: "0.5em", margin: "0.5em 0" }}>
+          <div style={{ backgroundColor: "#212154", color: "white", padding: "8px", borderRadius: "8px", textAlign: "center" }}>
+            <div style={{ fontWeight: "bolder" }}>🥈 Second Prize</div>
+            <div style={{ fontSize: "1.5rem", fontWeight: "bolder" }}>Natalia Chamon Kovalenko</div>
+            <img src="/designcomp/natalia.png" style={{ width: "90%", margin: "0.5em 0" }} />
+            <div><a target="_blank" href="https://www.figma.com/proto/DXXOAfXR154Kss9xdusPWl/Code-Network-Redesign-by-Natalia-Chamon-Kovalenko?page-id=1%3A2&node-id=1-326&p=f&viewport=205%2C311%2C0.04&t=UVseAuQMOIj9wkLx-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=1%3A326"><FaLink /> View the design</a></div>
+          </div>
+          <div style={{ backgroundColor: "#212154", color: "white", padding: "8px", borderRadius: "8px", textAlign: "center" }}>
+            <div style={{ fontWeight: "bolder" }}>🥈 Second Prize</div>
+            <div style={{ fontSize: "1.5rem", fontWeight: "bolder" }}>Jaden Nguyen</div>
+            <img src="/designcomp/jaden.png" style={{ width: "90%", margin: "0.5em 0" }} />
+            <div><a target="_blank" href="https://www.figma.com/design/S55I4e8Pp5GbpcWPBxPHPh/Jaden's-Code-Network-Website-Re-Design-Entry?node-id=0-1&t=GFKV3WbgdUiyTyek-1"><FaLink /> View the design</a></div>
+          </div>
+          <div style={{ backgroundColor: "#212154", color: "white", padding: "8px", borderRadius: "8px", textAlign: "center" }}>
+            <div style={{ fontWeight: "bolder" }}>🥉 Third Prize</div>
+            <div style={{ fontSize: "1.5rem", fontWeight: "bolder" }}>Tri Cuong Dinh</div>
+            <img src="/designcomp/tricuong.png" style={{ width: "90%", margin: "0.5em 0" }} />
+            <div><a target="_blank" href="https://www.figma.com/proto/iYrXv3Y25I6atTrpKtd21k/CodeNetwork_Tommy?node-id=1-2&t=JJAUoxOcswP8RuyN-1"><FaLink /> View the design</a></div>
+          </div>
+        </div>
+        <h1 style={{ marginTop: "4em" }}>What's this all about?</h1>
         <p>
           Code Network's website is where we showcase who our club is, why we exist, and what we do. We need to communicate this information to:
         </p>
@@ -75,9 +102,9 @@ export default function DesignCompetitionPage() {
         <p>
           And then we thought, why stop with the code? Why don't we give our members a chance to design our website? <b>That's where you come in!</b>
         </p>
-        <p style={{textAlign: 'center', fontSize: '1.5rem', padding: "1em 0em", borderTop: "0.1em solid #34cd3c", borderBottom: "0.1em solid #34cd3c"}}>Your mission is to <b>create an awesome new design for our website!</b></p>
+        <p style={{ textAlign: 'center', fontSize: '1.5rem', padding: "1em 0em", borderTop: "0.1em solid #34cd3c", borderBottom: "0.1em solid #34cd3c" }}>Your mission is to <b>create an awesome new design for our website!</b></p>
 
-        <h1>All the details:</h1>
+        {/* <h1>All the details:</h1>
         <Tabs
           value={value}
           onChange={(e, val) => setValue(val)}
@@ -118,7 +145,7 @@ export default function DesignCompetitionPage() {
                   <TableCell>18 November 2024 until 10 February 2025</TableCell>
                   <TableCell>{!compClosed && <>Submissions to be made via {showEnterButton ? <a href="https://codenetwork.notion.site/1311e884ce0d80eda987f9d6ddb9a06d?pvs=105">this link</a> : <span>a link to be provided soon!</span>}<br /><b>Please note the 48 hour late submission period does not apply for this competition!</b></>}</TableCell>
                 </TableRow>
-                <TableRow sx={{ backgroundColor: "#e2ffde" }}>
+                <TableRow>
                   <TableCell>Entrant Judging</TableCell>
                   <TableCell>11 to 23 February 2025</TableCell>
                   <TableCell>All entries will be judged by our judging panel, which will be comprised of key stakeholders from our Executive Team.</TableCell>
@@ -132,7 +159,7 @@ export default function DesignCompetitionPage() {
                   <TableCell>Community Vote</TableCell>
                   <TableCell>17 to 20 February 2025</TableCell>
                   <TableCell>Members of the Code Network community will be asked to vote on their favourite design.</TableCell>
-                </TableRow> */}
+                </TableRow>
                 <TableRow>
                   <TableCell>Winning Design Announced</TableCell>
                   <TableCell>24 February 2025</TableCell>
@@ -214,7 +241,7 @@ export default function DesignCompetitionPage() {
                       <TableCell>General Content</TableCell>
                       <TableCell>
                         If our club needs to publish a page with general information, how would the page look? Show us how we should typeset
-                        and format our basic content pages (this is basically a <a href="https://loremipsum.io/" target="_blank">"Lorem Ipsum"</a> page - 
+                        and format our basic content pages (this is basically a <a href="https://loremipsum.io/" target="_blank">"Lorem Ipsum"</a> page -
                         doesn't need to have actual content on it.)
                       </TableCell>
                     </TableRow>
@@ -345,9 +372,9 @@ export default function DesignCompetitionPage() {
             <div style={{ width: "36px", height: "36px", backgroundColor: "#34CD3C" }}></div>
             <span><b>Accent Green</b> #34CD3C</span>
           </div>
-        </CompetitionTab>
-        <p>Last Updated: 13 February 2025</p>
+        </CompetitionTab> */}
+        <p>Last Updated: 2 March 2025</p>
       </div>
-    </main>
+    </main >
   )
 }
