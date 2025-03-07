@@ -47,7 +47,7 @@ const FAQSection = () => {
               </div>
             </li>
           ))}
-          <li className="cd-faq__item" key={faqs.length + 1}>
+          {/* <li className="cd-faq__item" key={faqs.length + 1}>
             <a
               className={`cd-faq__trigger ${
                 openIndex === faqs.length + 1 ? 'open' : ''
@@ -73,7 +73,7 @@ const FAQSection = () => {
                 </p>
               </div>
             </div>
-          </li>
+          </li> */}
         </ul>
       </div>
 
