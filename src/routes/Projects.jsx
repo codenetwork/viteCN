@@ -2,6 +2,7 @@ import { Client } from "@notionhq/client"
 import { useEffect, useState } from "react"
 import "../styles/projects.css"
 import FAQSection from "@/components/FAQSection"
+import { Alert } from "@mui/material"
 // /** @jsxImportSource @emotion/react */
 // import { css } from "@emotion/react"
 
@@ -144,8 +145,13 @@ export default function ProjectsPage() {
           </div>
         </div>
         <h2 style={{ marginBottom: "0.5em", fontSize: "1.5rem", fontWeight: "medium" }}>Join us at our Project Nights!</h2>
-        <p>Interested in helping us to build our cool projects? Join us at our weekly project nights on <b>Mondays 5-8pm</b>!</p>
-        <p>See our social media pages for further details!</p>
+        <Alert severity="warning">
+          <p style={{margin: 0}}>Project Nights are currently on pause for the mid-semester break and upcoming public holidays.</p>
+          <p>With that said, our projects are always open for anyone to explore and contribute to! If you would be interested in contributing but are not sure where to get started, reach out to our Projects Team via our club's <a href="https://discord.gg/scXBk2j4uE">Discord server</a>.</p>
+          <p>See our social media pages for further details about our upcoming events!</p>
+        </Alert>
+        {/* <p>Interested in helping us to build our cool projects? Join us at our weekly project nights on <b>Mondays 5-8pm</b>!</p> */}
+        {/* <p>See our social media pages for further details!</p> */}
         <FAQSection />
       </div>
     </main>
