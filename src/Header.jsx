@@ -1,8 +1,13 @@
 import Sponsor from './Sponsor';
 import { Launch, Link } from '@mui/icons-material';
 import "./Header.css";
+import { useEffect } from 'react';
 
 function Header() {
+    useEffect(() => {
+        document.title = "Home | Code Network"
+    }, [])
+
     return (
         <div id="header">
             <div id="header-content">
