@@ -46,7 +46,7 @@ function Navbar() {
           <Link to="/rules">Rules</Link>
           <Link to="/projects">Projects</Link>
           {/* <Link to="/competition">Design Competition</Link> */}
-          <Link to="/sgm">Special General Meeting</Link>
+          <Link to="/hackathon">Winter Hackathon</Link>
 
           <button className="nav-btn nav-close-btn" onClick={showNavbar}>
             <FaTimes />

@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import './index.css';
 
-const CountdownSection = (initialDate) => {
-  // const initialDate = '2024-07-12T18:00:00+10:00';
+const CountdownSection = (initiaalDate) => {
+  const initialDate = '2025-08-08T07:00:00.053Z';
 
   const calculateTimeLeft = (initialDate) => {
-    const difference = +new Date(initialDate.initialDate) - +new Date();
+    const difference = +new Date(initialDate) - +new Date();
     let timeLeft = {};
 
     if (difference > 0) {
@@ -22,7 +22,7 @@ const CountdownSection = (initialDate) => {
 
   const [targetDate, setTargetDate] = useState(initialDate);
   const [timeLeft, setTimeLeft] = useState(calculateTimeLeft(initialDate));
-  const [heading, setHeading] = useState("Until the competition closes");
+  const [heading, setHeading] = useState("Until the competition starts");
 
   useEffect(() => {
     const timer = setTimeout(() => {
