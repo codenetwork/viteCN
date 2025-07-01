@@ -13,10 +13,10 @@ function Sponsor() {
         Read Our Prospectus
       </a>
       <h1>Our 2025 Sponsors</h1>
-      <h2>Platinum Sponsors</h2>
+      <h2>Gold Sponsors</h2>
       <div className="sponsor-grid">
-        <a href="https://www.technologyonecorp.com/" id="action">
-          <img src="/sponsors/t1.svg" alt="TechnologyOne" className="button-image" height={400} />
+        <a href="https://www.tanda.co/" id="action">
+          <img src="/sponsors/tanda.png" alt="tanda" className="button-image" />
         </a>
       </div>
       <h2>Silver Sponsors</h2>
