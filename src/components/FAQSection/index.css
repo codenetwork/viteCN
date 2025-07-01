@@ -2,7 +2,7 @@
   margin-top: 10px;
   display: flex;
   flex-direction: column;
-  background-color: #0e091b;
+  background-color: #0384D7;
   color: white;
   border-radius: 8px;
 }
@@ -12,7 +12,7 @@
   margin-bottom: 1.5rem;
   text-align: center;
   font-weight: bold;
-  color: var(--primary);
+  color: white;
 }
 
 .cd-faq__items {
@@ -35,7 +35,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 1rem;
-  background: #29243c;
+  background: #0047AB;
   color: white;
   border-radius: 4px;
   cursor: pointer;
@@ -80,7 +80,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-  
+
   }
 
   .cd-faq__trigger i {

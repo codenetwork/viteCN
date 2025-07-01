@@ -21,7 +21,7 @@ export default function HackathonPage() {
 
   const startTime = '2025-08-08T07:00:00.053Z';
 
-  const [showRegisterButton, setShowRegisterButton] = useState(false);
+  const [showRegisterButton, setShowRegisterButton] = useState(true);
 
   useEffect(() => {
    document.title = "Hackathon | Code Network";
@@ -57,8 +57,8 @@ export default function HackathonPage() {
              </p>
              <div className="buttons-list">
                {showRegisterButton && (
-                 <a className="btn" href="https://events.humanitix.com/code-network-winter-hackathon-2024">
-                   Register Today
+                 <a className="btn" href="https://campus.hellorubric.com/?eid=36162&qpayapp=true">
+                   QPAY Tickets
                  </a>
                )}
                <a className="btn" href="https://www.facebook.com/share/12MfPhBSmXr/">
@@ -91,7 +91,7 @@ export default function HackathonPage() {
            <br />
            <h3 style={{ textAlign: 'center' }}>How do I get involved?</h3>
            <p>
-             Use one of the registration links on this page to purchase a ticket from our event page on Humanitix and just turn up Friday night ready to go! Stay tuned to our socials for more information, ask questions and be notified about any updates.
+             Use one of the registration links on this page to purchase a ticket from our event page on QPAY and just turn up Friday night ready to go! Stay tuned to our socials for more information, ask questions and be notified about any updates.
            </p>
          </div>
        </div>
@@ -105,8 +105,8 @@ export default function HackathonPage() {
 
          <div className="end-cta">
            <p>Ready to just say yes!</p>
-           <a className="btn" href="https://events.humanitix.com/code-network-winter-hackathon-2024">
-             Register Today
+           <a className="btn" href="https://campus.hellorubric.com/?eid=36162&qpayapp=true">
+             Register Here
            </a>
          </div>
        )}
