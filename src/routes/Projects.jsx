@@ -13,34 +13,28 @@ import { Alert } from "@mui/material"
 
 const projects = [
   {
-    title: "Gesture Recognition",
-    emoji: "🕺",
-    repo: "https://github.com/codenetwork/gestureRecognition",
-    tags: [{ name: "Machine Learning", color: "blue" }]
+    title: "B{AI}by Steps",
+    emoji: "🤖",
+    repo: "https://github.com/codenetwork/baiby-steps",
+    tags: [{ name: "Reinforcement Learning", color: "blue" }]
   },
   {
-    title: "BetterTimetable",
-    emoji: "📅",
-    repo: "https://github.com/codenetwork/betterTimetable",
-    tags: [{ name: "Web", color: "red" }]
-  },
-  {
-    title: "Nightshade for Canvas",
-    emoji: "🌼",
-    repo: "https://github.com/twirlyseal/nightshade",
-    tags: [{ name: "Web", color: "red" }, { name: "Design", color: "orange" }]
-  },
-  {
-    title: "Code Network Website Rebuild",
-    emoji: "🌐",
-    repo: "https://github.com/codenetwork/codenetwork.co",
-    tags: [{ name: "Web", color: "red" }, { name: "Design", color: "orange" }]
+    title: "Duit",
+    emoji: "✅",
+    repo: "https://github.com/TwirlySeal/duit",
+    tags: [{ name: "Web", color: "red" }, { name: "Full-Stack", color: "orange" }, { name: "Golang", color: "yellow" }]
   },
   {
     title: "Code Network Discord Bot",
     emoji: "🤖",
     repo: "https://github.com/codenetwork/discord-bot-v3",
     tags: [{ name: "Discord", color: "green" }]
+  },
+  {
+    title: "Code Network Website Rebuild",
+    emoji: "🌐",
+    repo: "https://github.com/codenetwork/codenetwork.co",
+    tags: [{ name: "Web", color: "red" }, { name: "Design", color: "orange" }]
   },
 ]
 
