@@ -19,10 +19,10 @@ const projects = [
     tags: [{ name: "Reinforcement Learning", color: "blue" }]
   },
   {
-    title: "Duit",
-    emoji: "✅",
-    repo: "https://github.com/TwirlySeal/duit",
-    tags: [{ name: "Web", color: "red" }, { name: "Full-Stack", color: "purple" }, { name: "Golang", color: "yellow" }]
+    title: "Code Network Website Rebuild",
+    emoji: "🌐",
+    repo: "https://github.com/codenetwork/codenetwork.co",
+    tags: [{ name: "Web", color: "red" }, { name: "Design", color: "orange" }]
   },
   {
     title: "Code Network Discord Bot",
@@ -31,10 +31,10 @@ const projects = [
     tags: [{ name: "Discord", color: "green" }]
   },
   {
-    title: "Code Network Website Rebuild",
-    emoji: "🌐",
-    repo: "https://github.com/codenetwork/codenetwork.co",
-    tags: [{ name: "Web", color: "red" }, { name: "Design", color: "orange" }]
+    title: "Duit",
+    emoji: "✅",
+    repo: "https://github.com/TwirlySeal/duit",
+    tags: [{ name: "Web", color: "red" }, { name: "Full-Stack", color: "purple" }, { name: "Golang", color: "yellow" }]
   },
 ]
 
@@ -124,7 +124,7 @@ export default function ProjectsPage() {
           <div>💡 Coming up with new feature ideas</div>
         </div>
         <h2 style={{ marginBottom: "0.5em", fontSize: "1.5rem", fontWeight: "medium" }}>Project Contribution Flow</h2>
-        <p style={{textAlign: "center", paddingTop: "1em", paddingBottom: "1em", borderTop: "0.1em solid #34cd3c", borderBottom: "0.1em solid #34cd3c"}}>⚠️ New to projects? <a href="/projects/101">Learn more about how Git on our <b>Projects 101 page</b></a></p>
+        <p style={{ textAlign: "center", paddingTop: "1em", paddingBottom: "1em", borderTop: "0.1em solid #34cd3c", borderBottom: "0.1em solid #34cd3c" }}>⚠️ New to projects? <a href="/projects/101">Learn more about how Git on our <b>Projects 101 page</b></a></p>
         <div className="project-flow">
           <img src="/project_flow.png" />
           <div>
@@ -140,7 +140,7 @@ export default function ProjectsPage() {
         </div>
         <h2 style={{ marginBottom: "0.5em", fontSize: "1.5rem", fontWeight: "medium" }}>Join us at our Project Nights!</h2>
         <Alert severity="warning">
-          <p style={{margin: 0}}>Project Nights are currently on pause for the mid-semester break and upcoming public holidays.</p>
+          <p style={{ margin: 0 }}>Project Nights are currently on pause for the mid-semester break and upcoming public holidays.</p>
           <p>With that said, our projects are always open for anyone to explore and contribute to! If you would be interested in contributing but are not sure where to get started, reach out to our Projects Team via our club's <a href="https://discord.gg/scXBk2j4uE">Discord server</a>.</p>
           <p>See our social media pages for further details about our upcoming events!</p>
         </Alert>
