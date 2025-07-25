@@ -100,7 +100,21 @@ export default function HackathonPage() {
          8-10 August 2025<span className="px-2">|</span>QUT Kelvin Grove
        </p>
 
-       <FAQSection />
+       <div style={{
+         backgroundColor: "#0047AB",
+         color: "white",
+         padding: "10px",
+         display: "flex",
+         "flex-direction": "column",
+         "align-items": "center"
+       }}>
+         <h2 style={{textAlign: 'center'}}>Have more questions? Check out our FAQ</h2>
+         <a className='btn' href='https://docs.google.com/document/d/18Tsx55M6gpT-gmaaX5yIuRMvdngL38aP/edit?usp=drivesdk&ouid=112202513022017452804&rtpof=true&sd=true'>
+           FAQ
+         </a>
+       </div>
+
+        {/* <FAQSection questions={faqs} /> */}
        {showRegisterButton && (
 
          <div className="end-cta">

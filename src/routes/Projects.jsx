@@ -65,6 +65,41 @@ const notionFgColorMap = {
   "default": "#191919"
 }
 
+const faqs = [
+  {
+    question: "Am I locked into working on a single project?",
+    answer: "Not at all! You are welcome to contribute to any project that you feel like working on."
+  },
+  {
+    question: "What commitment is required for me to work on a project?",
+    answer: "We don't have any expectations about how much time or effort you should commit to the project. We have set these projects up so that you can contribute to them as much or as little as you wish."
+  },
+  {
+    question: "How do I find out more about the projects?",
+    answer: "We encourage you to reach out on our Discord server (link under the Socials item in the menu). You can also send us an email at hello@codenetwork.co for more information"
+  },
+  {
+    question: "Is there a time when people come together to work on these projects?",
+    answer: "There sure is! We run Project Nights every Monday night from 5 to 8pm at QUT Gardens Point. Please see our social media channels for more information."
+  },
+  {
+    question: "I wasn't able to attend a Project Night. Can I still work on a project?",
+    answer: "Absolutely! We have designed these projects to be accessible outside of the Project Nights, so you are most welcome to make any contributions when you feel like contributing!"
+  },
+  {
+    question: "Do I need to know how to code?",
+    answer: "Only if you plan on writing code for the projects. However, there are other ways you can contribute to a project, such as by editing the documentation, testing the project and writing bug reports, or coming up with feature ideas. You can also reach out to our community and ask how these projects were built."
+  },
+  {
+    question: "I'm not studying Information Technology or Software Engineering. Can I work on a project?",
+    answer: "Absolutely! In fact, we encourage students from non-IT or non-engineering backgrounds to contribute because of the diverse experience your study brings to our projects."
+  },
+  {
+    question: "I want to contribute but I'm not sure how. What should I do?",
+    answer: "Take a look at the contributing guidelines and the Issues page on each project's repository. We have written ideas for things that can be contributed to our projects. Otherwise, reach out on our Discord server and ask for more ideas."
+  }
+];
+
 export default function ProjectsPage() {
   // const [projects, setProjects] = useState();
 
