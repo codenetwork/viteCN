@@ -109,7 +109,7 @@ export default function HackathonPage() {
          "align-items": "center"
        }}>
          <h2 style={{textAlign: 'center'}}>Have more questions? Check out our FAQ</h2>
-         <a className='btn' href='https://docs.google.com/document/d/1RgGpn6UrpgtvdqnNRN80Kenfevnf4LOlahBb05UODE0/edit?usp=drivesdk'>
+         <a className='btn' href='https://docs.google.com/document/d/18Tsx55M6gpT-gmaaX5yIuRMvdngL38aP/edit?usp=drivesdk&ouid=112202513022017452804&rtpof=true&sd=true'>
            FAQ
          </a>
        </div>
