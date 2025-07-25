@@ -1,16 +1,14 @@
 import React, { useState } from 'react';
 import './index.css';
-import faqArray from './faqArray';
 import '@fortawesome/fontawesome-free/css/all.min.css'; // Import Font Awesome CSS
 
-const FAQSection = () => {
+function FAQSection({questions}) {
   const [openIndex, setOpenIndex] = useState(null);
 
   const toggleFAQ = (index) => {
     setOpenIndex(openIndex === index ? null : index);
   };
 
-  const faqs = faqArray;
   const rulesLink =
     'https://docs.google.com/document/d/1aps3SSH547lTOm8puOo2tHOzZmVsEIqNqE0K5ISF9Ec/edit#heading=h.a2xy02yl38ow';
   const rulesDescription = '';
@@ -20,7 +18,7 @@ const FAQSection = () => {
       <div className="cd-faq__items">
         <ul className="cd-faq__group">
           <h2 className="cd-faq__title">Frequently Asked Questions</h2>
-          {faqs.map((faq, index) => (
+          {questions.map((faq, index) => (
             <li className="cd-faq__item" key={index}>
               <a
                 className={`cd-faq__trigger ${

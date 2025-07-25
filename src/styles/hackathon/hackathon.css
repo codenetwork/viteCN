@@ -1,6 +1,13 @@
+/*
+Winter colour scheme for the hackathon
+Commented out because all stylesheets are being loaded on all pages which overrides these custom properties
+
 :root {
-  --primary: rgb(1, 214, 9);
+    --background: #0384D7;
+    --primary: white;
+    --trigger: #0047AB;
 }
+*/
 
 .container {
   max-width: 100vw;
@@ -64,8 +71,8 @@
 
   /* make the register today butoton to the right side but keep the text to the left ; */
   justify-content: space-between;
-  
-  
+
+
 }
 
 /*text-base w-fit py-2 px-6 bg-primary text-white rounded hover:text-white*/

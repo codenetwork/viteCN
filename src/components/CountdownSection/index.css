@@ -1,23 +1,22 @@
 .countdown {
     text-align: center;
-    color: var(--primary);
+    color: white;
     padding-bottom: 5px;
   }
-  
+
   .countdown h2 {
     margin-bottom: 10px;
     font-size: 24px;
-    display: inline-block; 
+    display: inline-block;
     color: white;
     font-weight: 450;
 
   }
-  
+
   .countdown span {
-    font-size: 20px;
-    
+    font-size: 25px;
+
     margin: 0 5px;
     display: inline;
     font-weight: 500;
 }
-  
