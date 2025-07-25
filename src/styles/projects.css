@@ -1,3 +1,10 @@
+/* Colour variables for FAQSection component */
+:root {
+    --background: #0e091b;
+    --primary: rgb(1, 214, 9);
+    --trigger: #29243c;
+}
+
 .project-list {
     display: grid;
     gap: 0.5em
