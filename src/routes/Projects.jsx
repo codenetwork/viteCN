@@ -144,7 +144,7 @@ export default function ProjectsPage() {
         <div>
           <img alt="Home lab workshops" src="/homelab_workshops.png" style={{ display: "flex", alignItems: "center" }} />
         </div>
-        <FAQSection />
+        <FAQSection questions={faqs} />
       </div>
     </main>
   )
