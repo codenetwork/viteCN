@@ -98,7 +98,7 @@ export default function ProjectsPage() {
 
         {/* <h2>Our Current Projects</h2> */}
         {/* <p>Click on any of the projects below to see the GitHub repository!</p> */}
-        <p style={{ textAlign: "center", fontSize: "1.4rem", fontWeight: "bold", marginBottom: "0.1em" }}>Here's what we're building this year!</p>
+        <p style={{ textAlign: "center", fontSize: "1.4rem", fontWeight: "bold", marginBottom: "0.1em" }}>Here's what we're building this semester!</p>
         <p style={{ textAlign: "center", marginTop: "0" }}>Click a project to open its GitHub repository ⤵️</p>
         {projects ? <div className="project-list">
           {projects.map(project =>
