@@ -14,7 +14,7 @@ import { Alert } from "@mui/material"
 const projects = [
   {
     title: "B{AI}by Steps",
-    emoji: "🤖",
+    emoji: "🧠",
     repo: "https://github.com/codenetwork/baiby-steps",
     tags: [{ name: "Reinforcement Learning", color: "blue" }]
   },
@@ -22,7 +22,7 @@ const projects = [
     title: "Duit",
     emoji: "✅",
     repo: "https://github.com/TwirlySeal/duit",
-    tags: [{ name: "Web", color: "red" }, { name: "Full-Stack", color: "orange" }, { name: "Golang", color: "yellow" }]
+    tags: [{ name: "Web", color: "red" }, { name: "Full-Stack", color: "purple" }, { name: "Golang", color: "yellow" }]
   },
   {
     title: "Code Network Discord Bot",
