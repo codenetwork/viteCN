@@ -13,22 +13,10 @@ import { Alert } from "@mui/material"
 
 const projects = [
   {
-    title: "Gesture Recognition",
-    emoji: "🕺",
-    repo: "https://github.com/codenetwork/gestureRecognition",
-    tags: [{ name: "Machine Learning", color: "blue" }]
-  },
-  {
-    title: "BetterTimetable",
-    emoji: "📅",
-    repo: "https://github.com/codenetwork/betterTimetable",
-    tags: [{ name: "Web", color: "red" }]
-  },
-  {
-    title: "Nightshade for Canvas",
-    emoji: "🌼",
-    repo: "https://github.com/twirlyseal/nightshade",
-    tags: [{ name: "Web", color: "red" }, { name: "Design", color: "orange" }]
+    title: "B{AI}by Steps",
+    emoji: "🧠",
+    repo: "https://github.com/codenetwork/baiby-steps",
+    tags: [{ name: "Reinforcement Learning", color: "blue" }]
   },
   {
     title: "Code Network Website Rebuild",
@@ -41,6 +29,12 @@ const projects = [
     emoji: "🤖",
     repo: "https://github.com/codenetwork/discord-bot-v3",
     tags: [{ name: "Discord", color: "green" }]
+  },
+  {
+    title: "Duit",
+    emoji: "✅",
+    repo: "https://github.com/TwirlySeal/duit",
+    tags: [{ name: "Web", color: "red" }, { name: "Full-Stack", color: "purple" }, { name: "Golang", color: "yellow" }]
   },
 ]
 
@@ -104,7 +98,7 @@ export default function ProjectsPage() {
 
         {/* <h2>Our Current Projects</h2> */}
         {/* <p>Click on any of the projects below to see the GitHub repository!</p> */}
-        <p style={{ textAlign: "center", fontSize: "1.4rem", fontWeight: "bold", marginBottom: "0.1em" }}>Here's what we're building this year!</p>
+        <p style={{ textAlign: "center", fontSize: "1.4rem", fontWeight: "bold", marginBottom: "0.1em" }}>Here's what we're building this semester!</p>
         <p style={{ textAlign: "center", marginTop: "0" }}>Click a project to open its GitHub repository ⤵️</p>
         {projects ? <div className="project-list">
           {projects.map(project =>
@@ -130,7 +124,7 @@ export default function ProjectsPage() {
           <div>💡 Coming up with new feature ideas</div>
         </div>
         <h2 style={{ marginBottom: "0.5em", fontSize: "1.5rem", fontWeight: "medium" }}>Project Contribution Flow</h2>
-        <p style={{textAlign: "center", paddingTop: "1em", paddingBottom: "1em", borderTop: "0.1em solid #34cd3c", borderBottom: "0.1em solid #34cd3c"}}>⚠️ New to projects? <a href="/projects/101">Learn more about how Git on our <b>Projects 101 page</b></a></p>
+        <p style={{ textAlign: "center", paddingTop: "1em", paddingBottom: "1em", borderTop: "0.1em solid #34cd3c", borderBottom: "0.1em solid #34cd3c" }}>⚠️ New to projects? <a href="/projects/101">Learn more about how Git on our <b>Projects 101 page</b></a></p>
         <div className="project-flow">
           <img src="/project_flow.png" />
           <div>
@@ -146,7 +140,7 @@ export default function ProjectsPage() {
         </div>
         <h2 style={{ marginBottom: "0.5em", fontSize: "1.5rem", fontWeight: "medium" }}>Join us at our Project Nights!</h2>
         <Alert severity="warning">
-          <p style={{margin: 0}}>Project Nights are currently on pause for the mid-semester break and upcoming public holidays.</p>
+          <p style={{ margin: 0 }}>Project Nights are currently on pause for the mid-semester break and upcoming public holidays.</p>
           <p>With that said, our projects are always open for anyone to explore and contribute to! If you would be interested in contributing but are not sure where to get started, reach out to our Projects Team via our club's <a href="https://discord.gg/scXBk2j4uE">Discord server</a>.</p>
           <p>See our social media pages for further details about our upcoming events!</p>
         </Alert>
