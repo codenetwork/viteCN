@@ -139,11 +139,11 @@ export default function ProjectsPage() {
           </div>
         </div>
         <h2 style={{ marginBottom: "0.5em", fontSize: "1.5rem", fontWeight: "medium" }}>Join us at our Project Nights!</h2>
+        <p>Interested in helping us to build our cool projects? Join us at our weekly project nights on <b>Mondays 5:30-8pm</b>!</p>
+        <p>See our social media pages for further details!</p>
         <div>
           <img alt="Home lab workshops" src="/homelab_workshops.png" style={{ display: "flex", alignItems: "center" }} />
         </div>
-        {/* <p>Interested in helping us to build our cool projects? Join us at our weekly project nights on <b>Mondays 5-8pm</b>!</p> */}
-        {/* <p>See our social media pages for further details!</p> */}
         <FAQSection />
       </div>
     </main>
