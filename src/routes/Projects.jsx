@@ -161,7 +161,7 @@ export default function ProjectsPage() {
         <h2 style={{ marginBottom: "0.5em", fontSize: "1.5rem", fontWeight: "medium" }}>Project Contribution Flow</h2>
         <p style={{ textAlign: "center", paddingTop: "1em", paddingBottom: "1em", borderTop: "0.1em solid #34cd3c", borderBottom: "0.1em solid #34cd3c" }}>⚠️ New to projects? <a href="/projects/101">Learn more about how Git on our <b>Projects 101 page</b></a></p>
         <div className="project-flow">
-          <img src="/project_flow.png" />
+          <img alt="Project flow" src="/project_flow.png" />
           <div>
             <p>These are the basic steps to make a contribution to any of our projects. Further details can be found at the project repositories linked above.</p>
             <ol>
@@ -174,13 +174,11 @@ export default function ProjectsPage() {
           </div>
         </div>
         <h2 style={{ marginBottom: "0.5em", fontSize: "1.5rem", fontWeight: "medium" }}>Join us at our Project Nights!</h2>
-        <Alert severity="warning">
-          <p style={{ margin: 0 }}>Project Nights are currently on pause for the mid-semester break and upcoming public holidays.</p>
-          <p>With that said, our projects are always open for anyone to explore and contribute to! If you would be interested in contributing but are not sure where to get started, reach out to our Projects Team via our club's <a href="https://discord.gg/scXBk2j4uE">Discord server</a>.</p>
-          <p>See our social media pages for further details about our upcoming events!</p>
-        </Alert>
-        {/* <p>Interested in helping us to build our cool projects? Join us at our weekly project nights on <b>Mondays 5-8pm</b>!</p> */}
-        {/* <p>See our social media pages for further details!</p> */}
+        <p>Interested in helping us to build our cool projects? Join us at our weekly project nights on <b>Mondays 5:30-8pm</b>!</p>
+        <p>See our social media pages for further details!</p>
+        <div>
+          <img alt="Home lab workshops" src="/homelab_workshops.png" style={{ display: "flex", alignItems: "center" }} />
+        </div>
         <FAQSection questions={faqs} />
       </div>
     </main>
