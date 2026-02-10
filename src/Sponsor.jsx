@@ -9,10 +9,10 @@ function Sponsor() {
       <div style={{ color: "white", fontSize: "18px", marginBottom: "8px" }}>
         Send us an email at <a href="mailto:industry@codenetwork.co">industry@codenetwork.co</a>.
       </div>
-      <a href="/code_network_2025_prospectus.pdf" id="action" style={{padding: "8px"}} target="_blank">
+      <a href="/corporate-sponsorship-prospectus-2026.pdf" id="action" style={{padding: "8px"}} target="_blank">
         Read Our Prospectus
       </a>
-      <h1>Our 2025 Sponsors</h1>
+      <h1>Our 2026 Sponsors</h1>
       <h2>Gold Sponsors</h2>
       <div className="sponsor-grid">
         <a href="https://www.tanda.co/" id="action">
