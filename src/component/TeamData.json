@@ -1,29 +1,74 @@
 [
   {
-    "name": "Subiksha Thiya",
-    "photo": "/execs/subiksha.jpg",
+    "name": "William Qu",
+    "photo": "/execs/default.jpg",
     "role": "President",
     "link": {
-      "email": "president@codenetwork.co"
+      "email": "president@codenetwork.co",
+      "linkedin": "https://www.linkedin.com/in/williamqu-it/"
+
     }
   },
   {
-    "name": "Corey McCormick",
-    "photo": "/execs/corey.jfif",
-    "role": "Projects Coordinator",
+    "name": "Ryan Chang",
+    "photo": "/execs/default.jpg",
+    "role": "Acting Vice President",
     "description": "",
     "link": {
-      "github": "https://github.com/McCorsa/",
-      "linkedin": "https://www.linkedin.com/in/corey-mccormick/"
+      "github": "",
+      "linkedin": ""
     }
   },
   {
-    "name": "Liam D'Souza",
-    "photo": "/execs/liam.jpeg",
-    "role": "General Executive",
+    "name": "Noah Ryu",
+    "photo": "/execs/default.jpg",
+    "role": "Tresurer",
+    "description": "",
     "link": {
-      "github": "https://github.com/liiam-dsouza",
-      "linkedin": "https://www.linkedin.com/in/liam-d%E2%80%99souza-559a3a235/"
+      "github": "",
+      "linkedin": ""
+    }
+  },
+  {
+    "name": "Zara Ho",
+    "photo": "/execs/default.jpg",
+    "role": "Secretary",
+    "link": {
+      "linkedin": ""
+    }
+},
+  {
+    "name": "Manny Go",
+    "photo": "/execs/default.jpg",
+    "role": "Engagement Coordinator",
+    "link": {
+      "linkedin": ""
+    }
+},
+  {
+    "name": "Srihari Kanakala",
+    "photo": "/execs/default.jpg",
+    "role": "Social Media Coordinator",
+    "link": {
+      "linkedin": ""
+    }
+},
+  {
+    "name": "Andrew Santos",
+    "photo": "/execs/default.jpg",
+    "role": "Industry Coordinator",
+    "link": {
+      "linkedin": "",
+      "email": "industry@codenetwork.co"
+    }
+  },
+{
+    "name": "Ethan Burnet",
+    "photo": "/execs/default.jpg",
+    "role": "Industry Coordinator",
+    "link": {
+      "linkedin": "",
+      "github": "https://github.com/McCorsa/"
     }
   }
 ]

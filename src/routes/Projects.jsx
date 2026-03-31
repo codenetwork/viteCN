@@ -13,28 +13,22 @@ import { Alert } from "@mui/material"
 
 const projects = [
   {
-    title: "B{AI}by Steps",
-    emoji: "🧠",
-    repo: "https://github.com/codenetwork/baiby-steps",
-    tags: [{ name: "Reinforcement Learning", color: "blue" }]
+    title: "Windows Kit",
+    emoji: "🪟",
+    repo: "https://github.com/TwirlySeal/windows-kit",
+    tags: [{ name: "Systems Programming", color: "red" }, { name: "Swift", color: "orange" }]
   },
   {
-    title: "Code Network Website Rebuild",
+    title: "Network Learning Workshops",
     emoji: "🌐",
-    repo: "https://github.com/codenetwork/codenetwork.co",
-    tags: [{ name: "Web", color: "red" }, { name: "Design", color: "orange" }]
+    repo: "https://discord.gg/a8UjmEufrF",
+    tags: [{ name: "Networks", color: "blue" }, { name: "In-person", color: "brown"}]
   },
   {
-    title: "Code Network Discord Bot",
-    emoji: "🤖",
-    repo: "https://github.com/codenetwork/discord-bot-v3",
-    tags: [{ name: "Discord", color: "green" }]
-  },
-  {
-    title: "Duit",
-    emoji: "✅",
-    repo: "https://github.com/TwirlySeal/duit",
-    tags: [{ name: "Web", color: "red" }, { name: "Full-Stack", color: "purple" }, { name: "Golang", color: "yellow" }]
+    title: "Triangle Splatting",
+    emoji: "✨",
+    repo: "https://github.com/adynsydeez/tri-splat-cn",
+    tags: [{ name: "Full-Stack", color: "purple" }, { name: "Python", color: "yellow" }, { name: "Node.js", color: "green"}]
   },
 ]
 
@@ -128,7 +122,7 @@ export default function ProjectsPage() {
       <div className="edges">
         <h1>Our Club's Projects</h1>
         <p style={{ textAlign: 'center', fontSize: '1.5rem', padding: "1em 0em", borderTop: "0.1em solid #34cd3c", borderBottom: "0.1em solid #34cd3c" }}>
-          Looking to flex your coding muscles? <b>Help us build the most awesome projects in 2025!</b>
+          Looking to flex your coding muscles? <b>Help us build the most awesome projects in {new Date().getFullYear()}!</b>
         </p>
 
         {/* <h2>Our Current Projects</h2> */}
@@ -174,10 +168,10 @@ export default function ProjectsPage() {
           </div>
         </div>
         <h2 style={{ marginBottom: "0.5em", fontSize: "1.5rem", fontWeight: "medium" }}>Join us at our Project Nights!</h2>
-        <p>Interested in helping us to build our cool projects? Join us at our weekly project nights on <b>Mondays 5:30-8pm</b>!</p>
+        <p>Interested in helping us to build our cool projects? Join us at our weekly project nights on <b>Mondays 6-8pm in GP-D108</b>!</p>
         <p>See our social media pages for further details!</p>
         <div>
-          <img alt="Home lab workshops" src="/homelab_workshops.png" style={{ display: "flex", alignItems: "center" }} />
+          <img alt="Home lab workshops" src="/homelab_workshops.png" style={{ display: "none", alignItems: "center" }} />
         </div>
         <FAQSection questions={faqs} />
       </div>

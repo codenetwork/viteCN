@@ -13,16 +13,16 @@ function Sponsor() {
         Read Our Prospectus
       </a>
       <h1>Our 2026 Sponsors</h1>
+      <h2>Platinum Sponsors</h2>
+      <div className="sponsor-grid">
+        <a href="https://www.technology1.com" id="action">
+          <img src="/sponsors/t1.svg" alt="TechnologyOne Logo" className="button-image" />
+        </a>
+      </div>
       <h2>Gold Sponsors</h2>
       <div className="sponsor-grid">
         <a href="https://www.tanda.co/" id="action">
-          <img src="/sponsors/tanda.png" alt="tanda" className="button-image" />
-        </a>
-      </div>
-      <h2>Silver Sponsors</h2>
-      <div className="sponsor-grid">
-        <a href="https://www.macquarie.com" id="action">
-          <img src="/sponsors/mgl.jpg" alt="Macquarie Group Logo" className="button-image" />
+          <img src="/sponsors/tanda.png" alt="tanda logo" className="button-image" />
         </a>
       </div>
     </div>

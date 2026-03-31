@@ -22,6 +22,9 @@ function Header() {
                                 <th style={{ textAlign: "right" }}>
                                     <a href="https://discordapp.com/invite/f6VRUW9"><img src="/discord.svg" className="tab" /></a>
                                 </th>
+                                <th>
+                                    <a href="https://www.linkedin.com/company/codenetwork/"><img src="/linkedin.svg" /></a>
+                                </th>
                                 <th style={{ textAlign: "left" }} >
                                     <a href="https://facebook.com/groups/WeCodeALot"><img src="/facebook.svg" className="tab" /></a>
                                 </th>
