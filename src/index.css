@@ -227,6 +227,7 @@ h2 {
     animation-fill-mode: both;
     animation-direction: alternate;
     animation-iteration-count: infinite;
+    display: none;
   }
   @keyframes squiggle-move {
     from {
