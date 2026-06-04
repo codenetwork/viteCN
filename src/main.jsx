@@ -15,7 +15,7 @@ ReactDOM.render(
       <Navbar />
       <div
         style={{
-          paddingTop: '100px',
+          paddingTop: '50px',
         }}
       >
         <main>

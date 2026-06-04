@@ -1,7 +1,7 @@
 [
   {
     "name": "William Qu",
-    "photo": "/execs/default.jpg",
+    "photo": "/execs/Will.jpg",
     "role": "President",
     "link": {
       "email": "president@codenetwork.co",
@@ -10,9 +10,9 @@
     }
   },
   {
-    "name": "Ryan Chang",
+    "name": "Angus Wong",
     "photo": "/execs/default.jpg",
-    "role": "Acting Vice President",
+    "role": "Vice President",
     "description": "",
     "link": {
       "github": "",
@@ -37,6 +37,16 @@
       "linkedin": ""
     }
 },
+  {
+    "name": "Ryan Chang",
+    "photo": "/execs/Ryan.png",
+    "role": "Projects Coordinator",
+    "description": "",
+    "link": {
+      "github": "https://github.com/RChang7",
+      "linkedin": "https://www.linkedin.com/in/ryanchang-it/"
+    }
+  },
   {
     "name": "Manny Go",
     "photo": "/execs/default.jpg",
@@ -65,10 +75,118 @@
 {
     "name": "Ethan Burnet",
     "photo": "/execs/default.jpg",
-    "role": "Industry Coordinator",
+    "role": "Projects Coordinator",
     "link": {
       "linkedin": "",
-      "github": "https://github.com/McCorsa/"
+      "github": ""
+    }
+  },
+{
+    "name": "Tarang Waghela",
+    "photo": "/execs/default.jpg",
+    "role": "Events Officer",
+    "link": {
+      "linkedin": "",
+      "github": ""
+    }
+  },
+{
+    "name": "Brooklyn Diep",
+    "photo": "/execs/default.jpg",
+    "role": "Events Officer",
+    "link": {
+      "linkedin": "",
+      "github": ""
+    }
+  },
+{
+    "name": "Monique Soth",
+    "photo": "/execs/default.jpg",
+    "role": "Graphic Designer",
+    "link": {
+      "linkedin": "",
+      "github": ""
+    }
+  },
+{
+    "name": "Kris Hsu",
+    "photo": "/execs/Kris.jpg",
+    "role": "Graphic Designer",
+    "link": {
+      "linkedin": "https://www.linkedin.com/in/kris-hsu",
+      "github": "https://github.com/ruby23719111"
+    }
+  },
+{
+    "name": "Aidan Smith",
+    "photo": "/execs/default.jpg",
+    "role": "Graphic Designer",
+    "link": {
+      "linkedin": "",
+      "github": ""
+    }
+  },
+{
+    "name": "Adyn Sydee",
+    "photo": "/execs/default.jpg",
+    "role": "Projects Officer",
+    "link": {
+      "linkedin": "",
+      "github": ""
+    }
+  },
+{
+    "name": "Graham Han",
+    "photo": "/execs/default.jpg",
+    "role": "Projects Officer",
+    "link": {
+      "linkedin": "",
+      "github": ""
+    }
+  },
+{
+    "name": "Jeffery Hawes",
+    "photo": "/execs/default.jpg",
+    "role": "Projects Officer",
+    "link": {
+      "linkedin": "",
+      "github": ""
+    }
+  },
+{
+    "name": "Jebeom Yeon",
+    "photo": "/execs/default.jpg",
+    "role": "Projects Officer",
+    "link": {
+      "linkedin": "",
+      "github": ""
+    }
+  },
+{
+    "name": "Mandeep Gautam",
+    "photo": "/execs/mandeep.png",
+    "role": "Industry Liaison",
+    "link": {
+      "linkedin": "https://www.linkedin.com/in/mandeep-gautam31/",
+      "github": ""
+    }
+  },
+{
+    "name": "Rahul Nair",
+    "photo": "/execs/default.jpg",
+    "role": "Industry Liaison",
+    "link": {
+      "linkedin": "",
+      "github": ""
+    }
+  },
+{
+    "name": "Nadja Donosepoetro",
+    "photo": "/execs/default.jpg",
+    "role": "Industry Liaison",
+    "link": {
+      "linkedin": "",
+      "github": ""
     }
   }
 ]

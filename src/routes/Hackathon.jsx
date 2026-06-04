@@ -53,17 +53,18 @@ export default function HackathonPage() {
              <CountdownSection heading="" />
 
              <p className="font-bold">
-               8-10 August 2025 <span className="px-2">|</span> QUT Kelvin Grove
+              21-23 August 2025
+               {/* 21-23 August 2025 <span className="px-2">|</span> QUT Kelvin Grove */}
              </p>
              <div className="buttons-list">
                {showRegisterButton && (
-                 <a className="btn" href="https://campus.hellorubric.com/?eid=36162&qpayapp=true">
-                   QPAY Tickets
+                 <a className="btn" href="https://forms.gle/cs9WdUprt8bZhgWs6">
+                   Early Bird Tickets (Members only)
                  </a>
                )}
-               <a className="btn" href="https://www.facebook.com/share/12MfPhBSmXr/">
+               {/* <a className="btn" href="https://www.facebook.com/share/12MfPhBSmXr/">
                  Facebook Event
-               </a>
+               </a> */}
                <a
                  className="btn"
                  href="https://docs.google.com/document/d/1aps3SSH547lTOm8puOo2tHOzZmVsEIqNqE0K5ISF9Ec/edit#heading=h.a2xy02yl38ow" // Replace this with the actual URL
@@ -97,7 +98,8 @@ export default function HackathonPage() {
        </div>
        <br />
        <p style={{ textAlign: 'center' }}>
-         8-10 August 2025<span className="px-2">|</span>QUT Kelvin Grove
+        21-23 August 2025
+         {/* 8-10 August 2025<span className="px-2">|</span>QUT Kelvin Grove */}
        </p>
 
        <div style={{
@@ -118,8 +120,8 @@ export default function HackathonPage() {
        {showRegisterButton && (
 
          <div className="end-cta">
-           <p>Ready to just say yes!</p>
-           <a className="btn" href="https://campus.hellorubric.com/?eid=36162&qpayapp=true">
+           <p>Ready to make something awsome!</p>
+           <a className="btn" href="https://forms.gle/cs9WdUprt8bZhgWs6">
              Register Here
            </a>
          </div>

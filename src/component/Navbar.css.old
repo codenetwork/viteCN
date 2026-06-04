@@ -57,7 +57,6 @@ header .nav-btn {
   color: var(--textColor);
   visibility: hidden;
   opacity: 0;
-  display: none;
   font-size: 1.8rem;
 }
 
@@ -65,7 +64,7 @@ header div,
 nav {
   display: flex;
   align-items: center;
-  column-gap: 1rem;
+  column-gap: 2rem;
 }
 
 .width-container {
@@ -73,40 +72,26 @@ nav {
 }
 
 .edges2 {
-  width: -webkit-fill-available;
+  width: 100vw;
   height: fit-content;
   position: fixed;
   top: 0;
   left: 0;
   z-index: 1;
-  /* justify-content: center; */
+  justify-content: center;
   background-color: var(--mainColor);
+  backdrop-filter: blur(4px);
   animation-name: navbar;
   animation-duration: 1s;
   animation-timing-function: cubic-bezier(0.5, 1, 0.89, 1);
   animation-fill-mode: forwards;
-  transition: all 350ms cubic-bezier(.3,2.58,.45,.65), border-radius .2s ease-in-out;
-  padding: 2px;
-  justify-content: space-between;
+  transition: background-color 0.3s ease-in-out;
 }
 
 .edges2.scrolled {
-  background-color: unset;
-    padding: 2px 4px;
-    top: 10px;
-    border-radius: 999999px;
-    margin: 12px 14px;
-    backdrop-filter: blur(10px) brightness(0.85);
+  background-color: rgba(0, 0, 0, 0.5); /* Transparent background when scrolled */
 }
-.edges2.scrolled .cntext {
-opacity: 0;
-}
-.scrolled .cnmini {
-transform: translateY(4px) translateX(8px) !important;
-}
-.scrolled .mtr {
-transform: translateY(2px) !important;
-}
+
 @keyframes navbar {
   from {
     margin-top: -20vh;
@@ -152,25 +137,6 @@ transform: translateY(2px) !important;
   padding: 0;
 }
 
-.join-btn {
-    padding: 9px;
-    background: #34cd3c;
-    border-radius: 9999px;
-    color: white !important;
-    border: 1px solid #ffffff29;
-    margin-right: 6px;
-    border-bottom: 4px solid #ffffff6b;
-}
-
-.join-btn:hover {
-transform: unset;
-}
-
-.join-btn:active {
-transform: translateY(2px);
-    border-bottom: 0px solid #ffffff6b;
-}
-
 .button-style:hover + .social-dropdown-menu,
 .social-dropdown-menu:hover {
   opacity: 1;
@@ -185,21 +151,12 @@ transform: translateY(2px);
   color: var(--secondaryColor);
   transition: all 0.4s cubic-bezier(0.5, 1, 0.89, 1);
 }
-.cnmini {
-transition: 0.1s all;
-transform: translateY(0px);
-}
 
 @media only screen and (max-width: 600px) {
   .edges2 {
-    justify-content: space-between;
+    padding-top: 20px;
+    justify-content: space-around;
   }
-.mtw {
-margin-left: 12px;
-}
-.mtr {
-margin-right: 12px;
-}
   header h3 {
     padding: 1rem;
     margin: 0;
@@ -210,7 +167,6 @@ margin-right: 12px;
   header .nav-btn {
     visibility: visible;
     opacity: 1;
-    display: block;
   }
   header nav {
     position: fixed;
@@ -226,13 +182,9 @@ margin-right: 12px;
     background-color: var(--mainColor);
     transition: 1s;
     transform: translateY(-100vh);
-        border-radius: 12px;
   }
   header .responsive_nav {
     transform: none;
     height: 100vh;
   }
-.scrolled .cnmini {
-    transform: translateY(4px) translateX(0px) !important;
-}
 }

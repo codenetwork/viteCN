@@ -19,11 +19,14 @@
     "@mui/material": "^5.11.10",
     "@notionhq/client": "^2.2.15",
     "animate.css": "^4.1.1",
+    "framer-motion": "^12.38.0",
     "gh-pages": "^5.0.0",
+    "gsap": "^3.14.2",
     "react": "^18.2.0",
     "react-animated-cursor": "^2.5.2",
     "react-dom": "^18.2.0",
     "react-icons": "^4.8.0",
+    "react-intersection-observer": "^10.0.3",
     "react-router-dom": "^6.9.0"
   },
   "devDependencies": {
