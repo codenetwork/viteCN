@@ -120,7 +120,7 @@ export default function HackathonPage() {
        {showRegisterButton && (
 
          <div className="end-cta">
-           <p>Ready to make something awsome!</p>
+           <p>Ready to make something awesome!</p>
            <a className="btn" href="https://forms.gle/cs9WdUprt8bZhgWs6">
              Register Here
            </a>
