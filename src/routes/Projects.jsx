@@ -13,10 +13,10 @@ import { Alert } from "@mui/material"
 
 const projects = [
   {
-    title: "Windows Kit",
-    emoji: "🪟",
-    repo: "https://github.com/TwirlySeal/windows-kit",
-    tags: [{ name: "Systems Programming", color: "red" }, { name: "Swift", color: "orange" }]
+    title: "Mobile App Development",
+    emoji: "📱",
+    repo: "https://discord.com/invite/a8UjmEufrF",
+    tags: [{ name: "App Development", color: "red" }, { name: "React Native", color: "orange" }]
   },
   {
     title: "Network Learning Workshops",
@@ -25,10 +25,10 @@ const projects = [
     tags: [{ name: "Networks", color: "blue" }, { name: "In-person", color: "brown"}]
   },
   {
-    title: "Triangle Splatting",
-    emoji: "✨",
-    repo: "https://github.com/adynsydeez/tri-splat-cn",
-    tags: [{ name: "Full-Stack", color: "purple" }, { name: "Python", color: "yellow" }, { name: "Node.js", color: "green"}]
+    title: "Note Taking + Todo App",
+    emoji: "📝",
+    repo: "https://discord.com/invite/a8UjmEufrF",
+    tags: [{ name: "Full-Stack", color: "purple" }, { name: "Python", color: "yellow" }]
   },
 ]
 
