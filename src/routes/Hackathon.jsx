@@ -58,8 +58,8 @@ export default function HackathonPage() {
              </p>
              <div className="buttons-list">
                {showRegisterButton && (
-                 <a className="btn" href="https://forms.gle/cs9WdUprt8bZhgWs6">
-                   Early Bird Tickets (Members only)
+                 <a className="btn" href="https://events.humanitix.com/code-network-winter-hackathon">
+                   Buy General Admission
                  </a>
                )}
                {/* <a className="btn" href="https://www.facebook.com/share/12MfPhBSmXr/">
@@ -121,7 +121,7 @@ export default function HackathonPage() {
 
          <div className="end-cta">
            <p>Ready to make something awesome!</p>
-           <a className="btn" href="https://forms.gle/cs9WdUprt8bZhgWs6">
+           <a className="btn" href="https://events.humanitix.com/code-network-winter-hackathon">
              Register Here
            </a>
          </div>
